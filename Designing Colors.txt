@@ -1,0 +1,11 @@
+background primary
+background secondary
+fonte
+primary color 	- predominante
+secondary color - 2 dominante
+tertiary color	- 3 dominante
+
+-----------------------------------
+
+dark mode
+keep the same primary, secondary and tertiary color, but more vibrant 
