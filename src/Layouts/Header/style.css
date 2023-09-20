@@ -1,16 +1,18 @@
 .header-container{
     /* border: 1px solid red; */
-    background-color: var(--background-header);
+    background-color: var(--background-primary);
 
     display: flex;
     justify-content: space-around;
     height: 7vh;
     align-items: center;
-    padding: 1vh;
+    padding: 2vh;
 }
 
 .header-container > img{
     height: 100%;
+    filter: drop-shadow(1px 1px #000);
+    cursor: pointer;
 }
 
 .header-links{
@@ -24,22 +26,33 @@
 
 .header-links > a{
     margin: 0 2vw;
-    /* text-align: center; */
     text-decoration: none;
+    color: var(--font-color-1);
 }
 
 .header-links button {
-    background-color: var(--background-button);
-    color: var(--color-button);
-
+    background-color: var(--color-primary);
+    color: var(--font-color-2);
+    border: 2px solid var(--color-primary) ;
+    
     border: 0;
     border-radius: 5px;
-    margin: 0 2vw;
+    margin: 0 1vw;
     padding: 0.5vw 1.5vw;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
+
+    width: 140px;
 }
 
 #login{
-    background-color: var(--color-button-primary);
+    background-color: var(--background-primary);
+    border: 2px solid var(--color-primary) ;
+    /* color: var(--font-color-1); */
+    color: var(--color-primary);
+}
+
+button:hover{
+    filter: brightness(0.97);
+    cursor: pointer;
 }
