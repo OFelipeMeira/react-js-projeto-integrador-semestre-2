@@ -3,12 +3,14 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;  
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s;
 }
 
 :root{
   --background-primary: #FFF;
   --background-secondary: #cacaca;
+  --color-toggleTheme: #ccc;
   --color-primary: #007BFF;
   --color-secondary: #0006A1;
   --color-tertiary: #00EDBF ;
@@ -24,4 +26,28 @@
   --color-tertiary: #16dc7c ;
   --font-color-1: #ffffff ;
   --font-color-2: #000000;
+}
+
+#box-primary{
+  background-color: var(--color-primary);
+  color: var(--font-color-2);
+  border: 2px solid var(--color-primary);
+}
+
+#box-primary-empty{
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+#box-secondary{
+  background-color: var(--color-secondary);
+  color: var(--font-color-2);
+  border: 2px solid var(--color-secondary);
+}
+
+#box-secondary-empty{
+  background-color: var(--color-secondary);
+  color: var(--font-color-2);
+  border: 2px solid var(--color-secondary);
 }

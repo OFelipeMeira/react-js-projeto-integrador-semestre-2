@@ -1,12 +1,9 @@
-// import Header from "./Layouts/Header";
-import Header from "./Layouts/Header/Header";
-import ToggleDarkMode from "./Components/ToggleDarkMode/ToggleDarkMode";
+import LandingPage from "./Pages/LandingPage/LandingPage";
 
 function App() {
   return (
     <>
-      <Header />
-      <ToggleDarkMode />
+      <LandingPage />
     </>
   );
 }
