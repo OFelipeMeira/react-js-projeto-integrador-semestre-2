@@ -15,9 +15,12 @@ body {
 :root{
   --background-header: #FFF;
   --background-button: #000;
+  --color-button-primary: #123;
+  --color-button: #ccc;
 }
 
 [data-theme="dark"]{
   --background-header: #000;
   --background-button: #fff;
+  --color-button: #ccc;
 }

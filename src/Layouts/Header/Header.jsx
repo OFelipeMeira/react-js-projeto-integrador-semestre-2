@@ -13,7 +13,7 @@ const Header = () => {
         <a href="">About EzBank</a>
         <a href="">Cards</a>
         <a href="">Investments</a>
-        <button className="login">Log In</button>
+        <button id="login">Log In</button>
         <button className="signup">New Account</button>
       </div>
     </div>
