@@ -2,7 +2,7 @@ import '../../Assets/Styles/SectionsStyle.css'
 
 import LandingPage03 from '../../Assets/Images/LandingPage02Mirror.jpg'
 
-import Title from '../../Components/Title_Main/Title'
+import Title from '../../Components/TitleMain/Title'
 import Title_Sub from '../../Components/TitleSub/TitleSub'
 import Button from '../../Components/Button/Button'
 
@@ -18,9 +18,9 @@ const SectionL1 = () => {
                 </section>
 
                 <section>
-                    <Title text={"Technology and Finance: Together in One Place"}/>
-                    <Title_Sub text={"The digital revolution has arrived in the financial world. Are you ready?"}/>
-                    <Button type={"box-primary"} size={"btn_1"} text={"Know More"}/>
+                    <Title text={""}/>
+                    <Title_Sub text={""}/>
+                    <Button type={"box-primary"} size={"btn_1"} text={""}/>
                 </section>
 
             </article>

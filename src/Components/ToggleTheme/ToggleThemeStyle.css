@@ -1,5 +1,5 @@
 .ToggleTheme{
-    filter: drop-shadow(1px 1px var(--font-color-1));
+    filter: drop-shadow(2px 2px var(--font-color-1));
 }
 
 .ToggleTheme button {
@@ -10,7 +10,6 @@
     cursor: pointer;
     padding: 7px;
     border-radius: 100%;
-    border: 0;
 }
 
 .ToggleTheme img{
