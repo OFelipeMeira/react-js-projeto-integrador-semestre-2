@@ -15,7 +15,11 @@ const Section = (props) => {
                     <section>
                         <Title text={title} />
                         <TitleSub text={subTitle} />
-                        <Button type={"box-primary"} size={"btn_1"} text={btnText} />
+                        <Button
+                            type={"box-primary"}
+                            size={"btn_1"}
+                            text={btnText}
+                        />
                     </section>
                     <section className='img'>
                         <img src={img} alt="" />
@@ -29,7 +33,11 @@ const Section = (props) => {
                     <section>
                         <Title text={title} />
                         <TitleSub text={subTitle} />
-                        <Button type={"box-primary"} size={"btn_1"} text={btnText} />
+                        <Button
+                            type={"box-primary"}
+                            size={"btn_1"}
+                            text={btnText}
+                        />
                     </section>
                 </article>
             }

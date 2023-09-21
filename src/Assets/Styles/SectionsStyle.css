@@ -28,11 +28,3 @@
 .img img{
     border-radius: 50px;
 }
-
-.bg-primary{
-    background-color: var(--background-primary);
-}
-
-.bg-secondary{
-    background-color: var(--background-secondary);
-}

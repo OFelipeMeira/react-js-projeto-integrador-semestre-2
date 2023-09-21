@@ -33,8 +33,8 @@ const LandingPage = () => {
             />
 
             <Footer
-                column1={"About our company"}
-                column2={"Other pages"}
+                column1={"Column1"}
+                column2={"Column2"}
             />
 
         </>

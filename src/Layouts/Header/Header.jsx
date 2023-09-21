@@ -14,11 +14,24 @@ const Header = () => {
 
 
       <div className="header-links">
+        
         <A text={"About EzBank"} href={""} />
+        
         <A text={"Cards"} href={""} />
+        
         <A text={"Investments"} href={""} />
-        <Button text={"Log In"}  size={"btn_normal"} type={"box-primary-empty"} />
-        <Button text={"Sign up"} size={"btn_normal"} type={"box-primary"} />
+        
+        <Button 
+          text={"Log In"}
+          size={"btn_normal"}
+          type={"box-primary-empty"}
+        />
+        
+        <Button
+          text={"Sign up"}
+          size={"btn_normal"}
+          type={"box-primary"}
+        />
       </div>
       
       <ToggleTheme type={"box-primary"} />
