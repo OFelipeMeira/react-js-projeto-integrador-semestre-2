@@ -4,10 +4,10 @@ import LogoBank from './../../Assets/Images/LogoBank.png'
 
 const Footer = (props) => {
 
-    const {column1, column2, pos} = props
+    const {column1, column2, tag} = props
 
     return (
-        <div className={`Footer ${pos}`}>
+        <div className={`Footer ${tag}`}>
             <img src={LogoBank} alt="Logo" />
 
             <ul>

@@ -1,12 +1,11 @@
 import "./AStyle.css";
-// import "../../Assets/Styles/Index.css"
 
 const A = (props) => {
-  const { href, text, target } = props;
+  const { href, text, target, tag } = props;
 
   return (
     <a
-      className="a-animation"
+      className={`a-animation ${tag}`}
       href={href}
       target={target}
     >

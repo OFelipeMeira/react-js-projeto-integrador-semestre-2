@@ -12,35 +12,34 @@ const Section = (props) => {
     const { title } = props
 
     return (
-        <div className="SectionHowTo">
-            <Title
-                text={title}
-            />
+        <div className="SectionHowTo bg-primary">
+            <Title text={title} />
 
             <div className="grid-1-3">
+                
                 <Card
-                    title={"download the app"}
-                    desc={"descricao "}
+                    titleText={"download the app"}
+                    descText={"descricao "}
                     img={Card01}
                 />
 
                 <Card
-                    title={"download the app"}
-                    desc={"descricao descricao descricao descricao "}
+                    titleText={"download the app"}
+                    descText={"descricao descricao descricao descricao "}
                     img={Card01}
                 />
 
                 <Card
-                    title={"download the app"}
-                    desc={"descricao descricao descricao descricao descricao descricao descricao descricao descricao "}
+                    titleText={"download the app"}
+                    descText={"descricao descricao descricao descricao descricao descricao descricao descricao descricao "}
                     img={Card01}
                 />
+
             </div>
 
             <Button 
-                text={"dsadsads"}
-                type={"box-primary-empty"}
-                size={"btn_1"}
+                text={"Download Now"}
+                tag={"btn_2 box-primary-empty bd-primary-bold"}
             />
 
         </div>

@@ -4,12 +4,12 @@ import LogoBank from '../../Assets/Images/LogoBank.png'
 
 import ToggleTheme from "../../Components/ToggleTheme/ToggleTheme";
 import Button from "../../Components/Button/Button";
-import A from "../../Components/A_Header/A";
+import A from "../../Components/A_Header/A_Header";
 
 const Header = () => {
 
   return (
-    <div className={"header-container"}>
+    <div className={"header-container bg-primary"}>
       <img src={LogoBank} alt="Logo" />
 
 
@@ -23,18 +23,18 @@ const Header = () => {
         
         <Button 
           text={"Log In"}
-          size={"btn_normal"}
-          type={"box-primary-empty"}
+          tag={"btn_normal box-primary-empty bd-primary-thin"}
         />
         
         <Button
           text={"Sign up"}
-          size={"btn_normal"}
-          type={"box-primary"}
+          tag={"btn_normal box-primary bd-primary-thin"}
         />
       </div>
       
-      <ToggleTheme type={"box-primary"} />
+      <ToggleTheme 
+        tag={"box-primary"}
+      />
 
     </div>
   );

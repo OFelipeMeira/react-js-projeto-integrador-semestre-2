@@ -1,6 +1,5 @@
 .header-container {
     position: fixed;
-    background-color: var(--background-primary);
 
     display: flex;
     justify-content: space-around;

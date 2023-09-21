@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 
 const ToggleDarkMode = (props) => {
 
-    const {type} = props
+    const {tag} = props
     
     const DOMbody = document.querySelector("body")
     
@@ -12,14 +12,18 @@ const ToggleDarkMode = (props) => {
     
     useEffect(() => setLightMode())
 
-    const setDarkMode = () => DOMbody.setAttribute("data-theme", 'dark')
+    const setDarkMode = () => {
+        DOMbody.setAttribute("data-theme", 'dark')
+    }
 
-    const setLightMode = () => DOMbody.setAttribute("data-theme", 'light')
+    const setLightMode = () => {
+        DOMbody.setAttribute("data-theme", 'light')
+    }
 
     const toggleDarkMode = (e) => {
         if (DOMbody.getAttribute("data-theme") === "light") {
-            setDarkMode()
             e.target.src = imgSun
+            setDarkMode()
         } else {
             setLightMode()
             e.target.src = imgMoon
@@ -28,7 +32,7 @@ const ToggleDarkMode = (props) => {
 
     return (
         <div className='ToggleTheme' >
-            <button onClick={toggleDarkMode} id={type}>
+            <button onClick={toggleDarkMode} className={tag}>
                 <img src={imgMoon} alt="" />
             </button>
         </div>

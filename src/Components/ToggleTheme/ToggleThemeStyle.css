@@ -1,3 +1,4 @@
+
 .ToggleTheme{
     filter: drop-shadow(2px 2px var(--font-color-1));
 }
@@ -6,7 +7,6 @@
     position: relative;
     width: 50px;
     height: 50px;
-    background-color: var(--color-toggleTheme);
     cursor: pointer;
     padding: 7px;
     border-radius: 100%;

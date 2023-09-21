@@ -6,7 +6,7 @@
     justify-content: space-around;
     align-items: center;
 
-    background-color: var(--background-primary);
+    /* background-color: var(--background-primary); */
 }
 
 .SectionHowTo > h1{

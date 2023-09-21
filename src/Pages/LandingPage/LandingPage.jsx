@@ -25,7 +25,7 @@ const LandingPage = () => {
                 img={Img2}
 
                 textOnRight={true}
-                bg={"bg-secondary"}
+                tag={"bg-secondary"}
             />
 
             <SectionHowTo
@@ -35,6 +35,7 @@ const LandingPage = () => {
             <Footer
                 column1={"Column1"}
                 column2={"Column2"}
+                tag={'bg-primary-color color-text-2'}
             />
 
         </>

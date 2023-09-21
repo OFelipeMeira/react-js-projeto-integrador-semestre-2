@@ -3,13 +3,13 @@ import './CardStyle.css'
 
 const Card = (props) => {
 
-    const { title, desc, img } = props
+    const { titleText, titleTags, descText, descTags, img, } = props
 
     return (
-        <div className="Card">
-            <h1>{title}</h1>
+        <div className="Card ">
+            <h1 className={titleTags}>{titleText}</h1>
             <img src={img} />
-            <p>{desc}</p>
+            <p className={descTags}>{descText}</p>
         </div>
     )
 }
