@@ -1,14 +1,20 @@
+.ToggleTheme{
+    filter: drop-shadow(1px 1px var(--font-color-1));
+}
+
 .ToggleTheme button {
     position: relative;
     width: 50px;
     height: 50px;
-    border-radius: 100%;
     background-color: var(--color-toggleTheme);
     cursor: pointer;
     padding: 7px;
+    border-radius: 100%;
+    border: 0;
 }
 
 .ToggleTheme img{
     width: 100%;
-    height: 100%
+    height: 100%;
+    border: 0;
 }

@@ -1,4 +1,3 @@
-
 .Button{
     border: 0;
     border-radius: 5px;
@@ -7,8 +6,7 @@
     
     text-justify: inter-word;
     font-weight: 700;
-    font-size: 14px;
-    width: 100px;
+    /* width: 100px; */
 }
 
 .Button:hover {
@@ -16,3 +14,13 @@
     cursor: pointer;
 }
 
+.btn_normal{
+    width: 110px;
+    font-size: 14px;
+}
+
+.btn_1{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;    
+}

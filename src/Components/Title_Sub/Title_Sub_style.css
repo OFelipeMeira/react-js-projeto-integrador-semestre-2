@@ -1,0 +1,7 @@
+.Title_Sub{
+    color: var(--font-color-1);
+    font-size: 30px;
+    font-weight: 300;
+
+    margin-bottom: 6vh;
+}
