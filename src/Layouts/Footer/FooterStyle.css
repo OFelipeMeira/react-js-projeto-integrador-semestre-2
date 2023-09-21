@@ -1,0 +1,37 @@
+.Footer{
+    /* width: 100%; */
+    height: 30vh;
+
+    background-color: var(--color-primary);
+    display: flex;
+    /* padding: 20px; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Footer h3{
+    color: var(--font-color-2);
+    
+    font-size: 23px;
+}
+
+.Footer a{
+    color: var(--font-color-2);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.Footer ul{
+    list-style: none;
+    height: 80%;
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Footer li{
+    padding-left: 25px;
+    
+}

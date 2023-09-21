@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -10,10 +10,9 @@
 :root{
   --background-primary: #FFF;
   --background-secondary: #dfdfdf;
-  --color-toggleTheme: #ccc;
   --color-primary: #007BFF;
-  --color-secondary: #0006A1;
-  --color-tertiary: #00EDBF ;
+  /* --color-secondary: #0006A1; */
+  /* --color-tertiary: #00EDBF ; */
   --font-color-1: #000000 ;
   --font-color-2: #fff;
 }
@@ -22,8 +21,8 @@
   --background-primary: #151515;
   --background-secondary: #3f3f3f;
   --color-primary: #2890ff;
-  --color-secondary: #2890ff;
-  --color-tertiary: #16dc7c ;
+  /* --color-secondary: #2890ff; */
+  /* --color-tertiary: #16dc7c ; */
   --font-color-1: #ffffff ;
   --font-color-2: #000000;
 }
@@ -37,7 +36,7 @@
 #box-primary-empty{
   background-color: transparent;
   color: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  border: 4px solid var(--color-primary);
 }
 
 #box-secondary{
@@ -49,5 +48,5 @@
 #box-secondary-empty{
   background-color: var(--color-secondary);
   color: var(--font-color-2);
-  border: 2px solid var(--color-secondary);
+  border: 1px solid var(--color-secondary);
 }
