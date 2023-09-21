@@ -1,5 +1,5 @@
-import "./A_style.css";
-import "../../Assets/Styles/index.css"
+import "./AStyle.css";
+// import "../../Assets/Styles/Index.css"
 
 const A = (props) => {
   const { href, text, target } = props;

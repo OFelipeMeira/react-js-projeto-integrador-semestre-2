@@ -4,8 +4,8 @@
 
     display: flex;
     justify-content: space-around;
-    height: 7vh;
     align-items: center;
+    height: 7vh;
     padding: 1vh;
     width: 100vw;
 }

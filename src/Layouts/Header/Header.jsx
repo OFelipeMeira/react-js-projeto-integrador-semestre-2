@@ -1,5 +1,4 @@
-import "./Header_style.css";
-import { useEffect, useState } from "react";
+import "./HeaderStyle.css";
 
 import LogoBank from '../../Assets/Images/LogoBank.png'
 

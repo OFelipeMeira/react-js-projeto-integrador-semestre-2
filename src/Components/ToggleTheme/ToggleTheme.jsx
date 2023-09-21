@@ -1,4 +1,4 @@
-import './ToggleTheme_style.css'
+import './ToggleThemeStyle.css'
 import { useEffect } from 'react'
 
 const ToggleDarkMode = (props) => {

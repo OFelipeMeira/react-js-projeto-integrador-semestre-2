@@ -1,4 +1,4 @@
-import './Title_style.css'
+import './TitleStyle.css'
 
 const Title = (props)=> {
     const {text} = props

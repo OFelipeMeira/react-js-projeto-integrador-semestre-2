@@ -1,4 +1,4 @@
-import './Title_Sub_style.css'
+import './TitleSubStyle.css'
 
 const Title_Sub = (props) =>{
     const {text} = props

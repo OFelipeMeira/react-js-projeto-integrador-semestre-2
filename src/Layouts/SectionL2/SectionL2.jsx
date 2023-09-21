@@ -1,9 +1,9 @@
-import '../../Assets/Styles/Sections_style.css'
+import '../../Assets/Styles/SectionsStyle.css'
 
 import LandingPage03 from '../../Assets/Images/LandingPage02Mirror.jpg'
 
 import Title from '../../Components/Title_Main/Title'
-import Title_Sub from '../../Components/Title_Sub/Title_Sub'
+import Title_Sub from '../../Components/TitleSub/TitleSub'
 import Button from '../../Components/Button/Button'
 
 const SectionL1 = () => {
