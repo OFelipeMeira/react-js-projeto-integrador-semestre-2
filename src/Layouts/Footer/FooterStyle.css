@@ -1,5 +1,5 @@
 .Footer{
-    /* width: 100%; */
+    width: 100%;
     height: 30vh;
 
     display: flex;
@@ -29,4 +29,11 @@
 
 .Footer li{
     padding-left: 25px;
+}
+
+.slim{
+    height: 15vh;
+}
+.slim img{
+    height: 10vh;
 }

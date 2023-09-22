@@ -24,6 +24,11 @@
     height: 30%;
     width: 100%;
     padding: 5%;
+    
+    font-weight: 500;
+}
+.Form > input:focus{
+    outline: 2px solid var(--color-primary);
 }
 
 .Form > h1{
@@ -34,4 +39,6 @@
     margin: 0 auto;
     width: 70%;
     height: 50%;
+
+    font-weight: 700;
 }

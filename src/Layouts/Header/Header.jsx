@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div className={"header-container bg-primary"}>
-      <img src={LogoBank} alt="Logo" />
+      <img src={LogoBank} alt="Logo" href="./"/>
 
 
       <div className="header-links">
@@ -24,16 +24,18 @@ const Header = () => {
         <Button 
           text={"Log In"}
           tag={"btn_normal box-primary-empty bd-primary-thin"}
+          href={'./login'}
         />
         
         <Button
           text={"Sign up"}
           tag={"btn_normal box-primary bd-primary-thin"}
+          href={'./login'}
         />
       </div>
       
       <ToggleTheme 
-        tag={"box-primary"}
+        tag={"box-primary-static"}
       />
 
     </div>

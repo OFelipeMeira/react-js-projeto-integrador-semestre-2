@@ -9,7 +9,10 @@ const LoginPage = () => {
     <div className="LoginPage">
         <Header />
         <FormComplete />
-        {/* <Footer tag={'bg-primary-color'}/> */}
+        <Footer 
+          type={"slim"}
+          tag={'bg-primary-color'}
+        />
     </div>
   );
 };

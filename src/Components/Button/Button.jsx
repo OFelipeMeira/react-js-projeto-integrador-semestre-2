@@ -2,10 +2,10 @@ import './ButtonStyle.css'
 
 const Button = (props) =>{
 
-    const {text, tag} = props
+    const {text, tag, href} = props
 
     return(
-        <a className={`Button ${tag}`} href="./">{text}</a>
+        <a className={`Button ${tag}`} href={href}>{text}</a>
     )
 }
 

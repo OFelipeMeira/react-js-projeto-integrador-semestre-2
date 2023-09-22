@@ -4,29 +4,48 @@ import LogoBank from './../../Assets/Images/LogoBank.png'
 
 const Footer = (props) => {
 
-    const {column1, column2, tag} = props
+    const {column1, column2, tag, type= "complete"} = props
 
     return (
-        <div className={`Footer ${tag}`}>
+        <div className={`Footer ${tag} ${type}`}>
             <img src={LogoBank} alt="Logo" />
 
-            <ul>
-                <h3>{column1}</h3>
-                <li><a href=""> acesse agr que n sei o q </a></li>
-                <li><a href=""> b </a></li>
-                <li><a href=""> c </a></li>
-                <li><a href=""> d </a></li>
-                <li><a href=""> e </a></li>
-            </ul>
+            {
+                type==="complete"?
+                <>
+                    <ul>
+                        <h3>{column1}</h3>
+                        <li><a href=""> acesse agr que n sei o q </a></li>
+                        <li><a href=""> b </a></li>
+                        <li><a href=""> c </a></li>
+                        <li><a href=""> d </a></li>
+                        <li><a href=""> e </a></li>
+                    </ul>
 
-            <ul>
-                <h3>{column2}</h3>
-                <li><a href=""> a </a></li>
-                <li><a href=""> b </a></li>
-                <li><a href=""> c </a></li>
-                <li><a href=""> d </a></li>
-                <li><a href=""> e </a></li>
-            </ul>
+                    <ul>
+                        <h3>{column2}</h3>
+                        <li><a href=""> a </a></li>
+                        <li><a href=""> b </a></li>
+                        <li><a href=""> c </a></li>
+                        <li><a href=""> d </a></li>
+                        <li><a href=""> e </a></li>
+                    </ul>
+                </>
+                :
+                <></>
+            }
+            {
+                type==="slim"?
+                <>
+                        <h3>{column1}</h3>
+  
+
+                        <h3>{column2}</h3>
+                </>
+                :
+                <></>
+            }
+            
 
         </div>
     )
