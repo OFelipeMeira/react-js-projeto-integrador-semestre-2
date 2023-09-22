@@ -1,5 +1,4 @@
 import '../../Assets/Styles/SectionsStyle.css'
-import './SectionHowTo.css'
 
 import Title from "../../Components/TitleMain/Title";
 import Card from "../../Components/Card/Card";

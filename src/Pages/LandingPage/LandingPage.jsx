@@ -1,6 +1,7 @@
 import Header from "../../Layouts/Header/Header"
 import SectionMain from "../../Layouts/SectionMain/Section"
 import SectionHowTo from "../../Layouts/SectionHowTo/SectionHowTo"
+import SectionRotating from "../../Layouts/SectionRotating/SectionRotating"
 import Footer from "../../Layouts/Footer/Footer"
 
 import Img1 from '../../Assets/Images/LandingPage01.jpg'
@@ -15,6 +16,7 @@ const LandingPage = () => {
                 title={'Your Financial Future Starts Here'}
                 subTitle={'Discover a world of opportunities with our digital bank.'}
                 btnText={'Sign Up'}
+                btnHref={"./login?type=1"}
                 img={Img1}
 
             />
@@ -32,10 +34,13 @@ const LandingPage = () => {
                 title={"Become a partner in 3 simple steps"}
             />
 
+            <SectionRotating />
+
             <Footer
                 column1={"Column1"}
                 column2={"Column2"}
                 tag={'bg-primary-color color-text-2'}
+                type={"complete"}
             />
 
         </>

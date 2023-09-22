@@ -6,7 +6,7 @@ import Button from '../../Components/Button/Button'
 
 const Section = (props) => {
 
-    const { title, subTitle, btnText, img, textOnRight = false, tag="bg-primary"} = props
+    const { title, subTitle, btnText, img, textOnRight = false, tag="bg-primary", btnHref} = props
 
     return (
         <div className={`SectionMain ${tag}`}>
@@ -18,6 +18,7 @@ const Section = (props) => {
                         <Button
                             tag={"box-primary btn_1"}
                             text={btnText}
+                            href={btnHref}
                         />
                     </section>
                     <section className='img'>
@@ -35,6 +36,7 @@ const Section = (props) => {
                         <Button
                             tag={"box-primary btn_1"}
                             text={btnText}
+                            href={btnHref}
                         />
                     </section>
                 </article>

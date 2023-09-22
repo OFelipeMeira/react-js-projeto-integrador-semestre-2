@@ -1,5 +1,6 @@
 import './FooterStyle.css'
 import LogoBank from './../../Assets/Images/LogoBank.png'
+import LogoBankBlue from '../../Assets/Images/LogoHeaderBlue.png'
 
 
 const Footer = (props) => {

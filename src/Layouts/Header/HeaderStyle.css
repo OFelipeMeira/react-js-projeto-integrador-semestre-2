@@ -9,11 +9,11 @@
     width: 100vw;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
-.header-container > img {
+.header-container a, .header-container img {
     height: 100%;
-    filter: drop-shadow(1px 1px #000);
     cursor: pointer;
 }
 
@@ -22,4 +22,8 @@
     justify-content: flex-end;
     width: 70vw;
     align-items: center;
+}
+
+.header-container .Button {
+    margin: 0 1vw;
 }

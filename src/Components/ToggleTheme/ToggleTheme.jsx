@@ -23,10 +23,12 @@ const ToggleDarkMode = (props) => {
     const toggleDarkMode = (e) => {
         if (DOMbody.getAttribute("data-theme") === "light") {
             e.target.src = imgSun
+            e.target.setAttribute("filter", "invert")
             setDarkMode()
         } else {
             setLightMode()
             e.target.src = imgMoon
+            e.target.setAttribute("filter", "normal")
         }
     }
 

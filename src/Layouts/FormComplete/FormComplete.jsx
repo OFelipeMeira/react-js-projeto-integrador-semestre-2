@@ -1,40 +1,47 @@
 import "./FormCompleteStyle.css";
 import FormComponent from "../../Components/FormComponent/FormComponent";
-import Arrow from '../../Assets/Images/Arrow.png'
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import {useNavigate} from 'react-router-dom';
 
 const FormLoginRegister = () => {
   const [pos, setPos] = useState('Left');
   const [title, setTitle] = useState('');
+  
   const [text, setText] = useState('');
-  const [icon, setIcon] = useState("")
+  const navigate = useNavigate();
+
+  const queryParameters = new URLSearchParams(window.location.search)
+  const type = queryParameters.get("type")
+
 
   const showLogIn = () => {
     setPos("Right")
     setTitle("Already Have an accont?")
     setText("Log In")
-    setIcon("R")
+    navigate("/login?type=1")
   }
-  const showSingUp = () => {
+  
+  const showSignUp = () => {
     setPos("Left")
     setTitle("New Here?")
     setText("Sign Up")
-    setIcon("L")
+    navigate("/login?type=2")
   }
 
   const positionHandle = () => {
-    if (pos==='Left') showLogIn()
-    else showSingUp()
+    if (type == 1) showSignUp()
+    if (type == 2) showLogIn()
   };
 
-  useState(()=>{
-    showSingUp()
-  })
+  useEffect(()=>{
+    positionHandle()
+  },[])
+
+
   return (
-    <div className="Form-container bd-rd-2 bg-primary bd-primary-bold">
+    <div className="Form-container bd-rd-2 bg-primary bd-primary-bold no-select">
       <FormComponent type={"Login"} />
       <FormComponent type={"Signup"} />
-      {/* <div className={`cover bd-rd-2 bd-primary-bold ${pos}`} onClick={positionHandle} style={{ bottom: pos }}> */}
       <div className={`cover bd-primary-bold ${pos}`} onClick={positionHandle} style={{ bottom: pos }}>
         <h1 className="color-text-2">{title}</h1>
         <h1 className="color-text-2">{text}</h1>
