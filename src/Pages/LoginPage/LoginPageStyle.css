@@ -1,0 +1,24 @@
+.LoginPage{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-primary);
+}
+
+.LoginPage .Form-container{
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.LoginPage .cover{
+    top: 50%;
+    left: 50%;
+}
+
+.LoginPage .Footer{
+    width: 99.9vw;
+    position: absolute;
+    bottom: 0;
+}

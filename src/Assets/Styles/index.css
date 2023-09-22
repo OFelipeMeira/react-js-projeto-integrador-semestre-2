@@ -13,7 +13,7 @@
 .box-primary{
   background-color: var(--color-primary);
   color: var(--font-color-2);
-  /* border: 2px solid var(--color-primary); */
+  cursor: pointer;
 }
 
 .box-primary-empty{
@@ -45,6 +45,10 @@
 
 /* === TAGS: border === */
 
+.bd-none{
+  border: none;
+}
+
 .bd-primary-thin{
   border: 1px solid var(--color-primary);
 }
@@ -57,7 +61,20 @@
   border: 4px solid var(--color-primary);
 }
 
+.bd-rd-1{
+  border-radius: 5px;
+}
+
+.bd-rd-2{
+  border-radius: 50px;
+}
+
 /* === TAGS: color === */
+
+.color-primary{
+  color: var(--color-primary);
+}
+
 
 .color-text-2{
   color: var(--font-color-2);
