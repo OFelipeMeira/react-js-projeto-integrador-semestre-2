@@ -6,8 +6,11 @@ import Gif from '../../Assets/Images/gifTeste.gif'
 const SectionRotating = () => {
     return (
         <div className="SectionRotating bg-secondary no-select">
-            {/* <div className="box bg-primary-color"> */}
-            <div className="box no-select">
+
+
+            {/* Object in the center: */}
+            <div className="box">
+                {/* itens: */}
                 <span style={{ "--i": 1 }} className='no-select bd-primary-bold bd-rd-2'><img className='bd-rd-2' src={LogoBank} alt="" /></span>
                 <span style={{ "--i": 2 }} className='no-select bd-primary-bold bd-rd-2'><img className='bd-rd-2' src={Gif} alt="" /></span>
                 <span style={{ "--i": 3 }} className='no-select bd-primary-bold bd-rd-2'><img className='bd-rd-2' src={LogoBank} alt="" /></span>

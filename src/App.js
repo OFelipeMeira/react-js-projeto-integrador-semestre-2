@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //  Pages
 import LandingPage from "./Pages/LandingPage/LandingPage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
+import DashboardPage from "./Pages/DashboardPage/DashboardPage";
 import Testes from './Pages/Testes/Testes'
 
 //  Styles
@@ -16,6 +17,8 @@ function App() {
         <Routes>
           <Route path="/" Component={LandingPage}/>
           <Route path="/login" Component={LoginPage}/>
+          <Route path="/dashboard" Component={DashboardPage}/>
+          
           <Route path="/teste" Component={Testes}/>
 
         </Routes>

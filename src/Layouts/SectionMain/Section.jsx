@@ -4,6 +4,8 @@ import Title from '../../Components/TitleMain/Title'
 import TitleSub from '../../Components/TitleSub/TitleSub'
 import Button from '../../Components/Button/Button'
 
+import { Link } from "react-router-dom";
+
 const Section = (props) => {
 
     const { title, subTitle, btnText, img, textOnRight = false, tag="bg-primary", btnHref} = props

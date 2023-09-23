@@ -12,6 +12,7 @@ const FormLoginRegister = () => {
 
   const queryParameters = new URLSearchParams(window.location.search)
   const type = queryParameters.get("type")
+  const intType = parseInt(type)
 
 
   const showLogIn = () => {
@@ -29,8 +30,8 @@ const FormLoginRegister = () => {
   }
 
   const positionHandle = () => {
-    if (type == 1) showSignUp()
-    if (type == 2) showLogIn()
+    if (intType === 1) showSignUp()
+    if (intType === 2) showLogIn()
   };
 
   useEffect(()=>{

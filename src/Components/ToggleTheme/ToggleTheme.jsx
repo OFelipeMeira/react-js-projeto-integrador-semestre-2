@@ -1,41 +1,35 @@
 import './ToggleThemeStyle.css'
+// import imgMoon from '../../Assets/Images/imgMoon.png'
+// import imgSun from '../../Assets/Images/imgSun.png'
+import darkMode from '../../Assets/Images/darkMode.png'
+import darkMode2 from '../../Assets/Images/darkMode2.png'
+import darkMode2White from '../../Assets/Images/darkMode2White.png'
 import { useEffect } from 'react'
 
 const ToggleDarkMode = (props) => {
 
-    const {tag} = props
+    const {white=false} = props
     
     const DOMbody = document.querySelector("body")
-    
-    const imgSun = "https://cdn-icons-png.flaticon.com/512/192/192538.png"
-    const imgMoon = "https://www.freeiconspng.com/thumbs/moon-icon/moon-icon-8.png"
-    
-    useEffect(() => setLightMode())
+  
+    // const imgSun = "https://cdn-icons-png.flaticon.com/512/192/192538.png"
+    // const imgMoon = "https://www.freeiconspng.com/thumbs/moon-icon/moon-icon-8.png"
 
-    const setDarkMode = () => {
-        DOMbody.setAttribute("data-theme", 'dark')
-    }
-
-    const setLightMode = () => {
-        DOMbody.setAttribute("data-theme", 'light')
-    }
-
-    const toggleDarkMode = (e) => {
+    const toggleDarkMode = () => {
         if (DOMbody.getAttribute("data-theme") === "light") {
-            e.target.src = imgSun
-            e.target.setAttribute("filter", "invert")
-            setDarkMode()
+            DOMbody.setAttribute("data-theme", 'dark')
         } else {
-            setLightMode()
-            e.target.src = imgMoon
-            e.target.setAttribute("filter", "normal")
+            DOMbody.setAttribute("data-theme", 'light')
         }
     }
 
+    useEffect(()=>{
+        DOMbody.setAttribute("data-theme", 'light')
+    },[])
+
     return (
         <div className='ToggleTheme' >
-            <button onClick={toggleDarkMode} className={tag}>
-                <img src={imgMoon} alt="" />
+            <button onClick={toggleDarkMode} style={{backgroundImage:`url(${white===true? darkMode2White : darkMode2})`}}>
             </button>
         </div>
     )

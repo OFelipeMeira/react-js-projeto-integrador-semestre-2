@@ -16,7 +16,7 @@ const LandingPage = () => {
                 title={'Your Financial Future Starts Here'}
                 subTitle={'Discover a world of opportunities with our digital bank.'}
                 btnText={'Sign Up'}
-                btnHref={"./login?type=1"}
+                btnHref={"/dashboard"}
                 img={Img1}
 
             />
@@ -24,6 +24,7 @@ const LandingPage = () => {
                 title={'Technology and Finance: Together in One Place'}
                 subTitle={'The digital revolution has arrived in the financial world. Are you ready?'}
                 btnText={'Know More'}
+                btnHref={''}
                 img={Img2}
 
                 textOnRight={true}

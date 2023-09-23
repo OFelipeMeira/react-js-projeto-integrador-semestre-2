@@ -1,0 +1,28 @@
+.Aside-item{
+    display: flex;
+    background-color: var(--color-primary);
+
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 10px;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.Aside-item > img{
+    background-color: aqua;
+    border-radius: 100px;
+    width: 15%;
+}
+
+.Aside-item > h1{
+    margin-left: 20px;
+    width: 100%;
+    color: var(--font-color-2);
+    text-transform: capitalize;
+}
+.Aside:hover .Aside-item:not(:hover) {
+    cursor: pointer;
+}
