@@ -3,7 +3,7 @@ import './CardStyle.css'
 
 const Card = (props) => {
 
-    const { titleText, titleTags, descText, descTags, img, } = props
+    const { titleText, titleTags, descText, descTags, img } = props
 
     return (
         <div className="Card ">

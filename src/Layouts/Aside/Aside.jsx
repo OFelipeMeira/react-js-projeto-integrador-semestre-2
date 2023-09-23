@@ -4,31 +4,31 @@ import AsideItem from '../../Components/AsideItem/AsideItem'
 import ToggleDarkMode from '../../Components/ToggleTheme/ToggleTheme'
 
 const Aside = () => {
+  
   return (
-    <div className="Aside">
-
-        <AsideItem
-          text="titulo Component"
-          img={img}
-          goTo={''} // Coming Soon
-        />
-        
-        <AsideItem
-          text="titulo"
-          img={img}
-          goTo={''} // Soon
-        />
-        
-        <AsideItem
-          text="titulo"
-          img={img}
-          goTo={''} // Soon
-        />
+    <div className={`Aside`}>
 
         <ToggleDarkMode
             white={true}
         />
 
+        <AsideItem
+          text="Menu"
+          img={img}
+          goTo={''} // Coming Soon
+        />
+
+        <AsideItem
+          text="My account"
+          img={img}
+          goTo={''} // Soon
+        />
+
+        <AsideItem
+          text="Settings"
+          img={img}
+          goTo={''} // Soon
+        />
 
     </div>
   )

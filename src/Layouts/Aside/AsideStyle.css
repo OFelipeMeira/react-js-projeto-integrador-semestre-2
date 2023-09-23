@@ -2,19 +2,20 @@
     background-color: var(--color-primary);
 
     height: 100%;
-    width: 20vw;
-
+    width: 400px;
     display: flex;
     flex-direction: column;
-
+    
     justify-content: center;
     align-items: center;
+    z-index: 10;
 
 }
 
 .Aside .ToggleTheme{
-    position: absolute;
-    top: 3%;
-    left: 16vw;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-right: 15%;
+    align-self: flex-end;
 }
-

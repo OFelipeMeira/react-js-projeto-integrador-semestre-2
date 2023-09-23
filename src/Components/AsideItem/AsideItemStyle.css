@@ -1,13 +1,13 @@
 .Aside-item{
     display: flex;
-    background-color: var(--color-primary);
+    background-color: transparent;
 
     align-items: center;
     justify-content: center;
     padding: 5%;
     margin: 10px;
-
-    width: fit-content;
+    
+    width: 350px;
     height: fit-content;
 }
 

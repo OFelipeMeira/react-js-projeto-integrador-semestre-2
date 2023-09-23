@@ -1,0 +1,29 @@
+.CardSide{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    width: 350px;
+    height: 120px;
+
+    align-items: center;
+    background-color: var(--background-primary);
+    box-shadow: 3px 3px 5px var(--color-primary);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.CardSide > img{
+    width: 100%;
+    padding: 5px;
+}
+
+.CardSide h2{
+    text-align: end;
+    color: var(--font-color-1);
+}
+
+.CardSide h1{
+    color: var(--font-color-1);
+    font-size: 24px ;
+}
+
