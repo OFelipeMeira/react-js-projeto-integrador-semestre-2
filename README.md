@@ -14,13 +14,13 @@ __ Italico __
 
 # Ez Bank Project
 
-this project were design to be a financial bank using:
-    ReacJs for webpages;
-    React Native for a mobile app;
-    Django Restfull for create an API;
-    MySQL for the data base.
+### this project were design to be a financial bank using:
+###    - ReacJs for webpages;
+###    - React Native for a mobile app;
+###    - Django Restfull for create an API;
+###    - MySQL for the data base.
 
-## Orientations for this project
+## Project Requirements:
  - The mobile app access can be allowed just by login and password
  - The mobile app should be able to do transaction  between accounts
  - The mobile app should be able to save a profile and a photo
