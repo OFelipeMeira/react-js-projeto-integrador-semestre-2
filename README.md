@@ -21,12 +21,12 @@ this project were design to be a financial bank using:
     MySQL for the data base.
 
 ## Orientations for this project
-The mobile app access can be allowed just by login and password
-the mobile app should be able to do transaction  between accounts
-the mobile app should be able to save a profile and a photo
-the mobile app should allow or not a request for credit card by consuming and API Resful
-the mobile app should block the access after 3 attempts in a wrong password
-the mobile app should show the balance and statement of an account
+    The mobile app access can be allowed just by login and password
+    the mobile app should be able to do transaction  between accounts
+    the mobile app should be able to save a profile and a photo
+    the mobile app should allow or not a request for credit card by consuming and API Resful
+    the mobile app should block the access after 3 attempts in a wrong password
+    the mobile app should show the balance and statement of an account
 
 All the data need to come from an API
 
