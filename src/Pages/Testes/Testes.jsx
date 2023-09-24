@@ -1,15 +1,25 @@
-import React from 'react'
-import Form from '../../Components/FormComponent/FormComponent'
+import React, { useEffect } from 'react'
+import './testeStyle.css'
 
 const Teste = () => {
+
+  const data = [3, 28, 48, 13, 20 ]
+
+  const maxValue = Math.max(...data)
+
   return (
     <div>
-        <Form
-          type={"Signup"}
-        />
-        <Form
-          type={"Login"}
-        />
+      <div className="grafico">
+        {
+          data.map( item =>{
+            return (
+            <span key={item} style={{ "--size":`${ item*100/maxValue }%`,
+                           "--length":data.length }}></span>
+            )
+          })
+        }
+
+      </div>
 
     </div>
   )
