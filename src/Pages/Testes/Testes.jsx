@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react'
-import './testeStyle.css'
+// import React, { useEffect } from 'react'
+import "./testeStyle.css";
 
 const Teste = () => {
+  const data = [10, 20, 32, 7];
 
-  const data = [10, 20, 32 ,7]
-
-  const maxValue = Math.max(...data)
+  // const maxValue = Math.max(...data)
 
   return (
     <div>
-      <div className="grafico">
+      {/* <div className="grafico">
         {
           data.map( item =>{
             return (
@@ -19,10 +18,13 @@ const Teste = () => {
           })
         }
 
-      </div>
+      </div> */}
 
+      <nav className="header w-scren h-12 bg-orange-500 ">
+        <h1 className="text-orange-500">Teste q n funfa</h1>
+      </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Teste
+export default Teste;

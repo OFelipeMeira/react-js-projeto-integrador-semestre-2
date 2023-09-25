@@ -1,8 +1,10 @@
-import Header from "../../Layouts/Header/Header"
+// import Header from "../../Layouts/Header/Header"
 import SectionMain from "../../Layouts/SectionMain/Section"
 import SectionHowTo from "../../Layouts/SectionHowTo/SectionHowTo"
 import SectionRotating from "../../Layouts/SectionRotating/SectionRotating"
 import Footer from "../../Layouts/Footer/Footer"
+
+import HeaderTw from "../../Layouts/HeaderTw/HeaderTw"
 
 import Img1 from '../../Assets/Images/LandingPage01.jpg'
 import Img2 from '../../Assets/Images/LandingPage02.jpg'
@@ -10,7 +12,9 @@ import Img2 from '../../Assets/Images/LandingPage02.jpg'
 const LandingPage = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
+
+            <HeaderTw />
 
             <SectionMain
                 title={'Your Financial Future Starts Here'}
