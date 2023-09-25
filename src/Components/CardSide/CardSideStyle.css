@@ -6,8 +6,8 @@
     height: 120px;
 
     align-items: center;
-    background-color: var(--background-primary);
-    box-shadow: 3px 3px 5px var(--color-primary);
+    background-color: var(--background-secondary);
+    box-shadow: 3px 3px 5px #a7a7a7;
     border-radius: 20px;
     padding: 20px;
 }
@@ -19,11 +19,11 @@
 
 .CardSide h2{
     text-align: end;
-    color: var(--font-color-1);
+    color: var(--color-primary);
 }
 
 .CardSide h1{
-    color: var(--font-color-1);
+    color: #3f3f3f;
     font-size: 24px ;
 }
 

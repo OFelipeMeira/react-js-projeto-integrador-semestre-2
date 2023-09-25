@@ -3,7 +3,7 @@ import './testeStyle.css'
 
 const Teste = () => {
 
-  const data = [3, 28, 48, 13, 20 ]
+  const data = [10, 20, 32 ,7]
 
   const maxValue = Math.max(...data)
 

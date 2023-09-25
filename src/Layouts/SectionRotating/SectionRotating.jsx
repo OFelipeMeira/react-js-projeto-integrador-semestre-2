@@ -1,5 +1,5 @@
 import './SectionRotatingStyle.css'
-import LogoBank from '../../Assets/Images/Card01.jpg'
+import LogoBank from '../../Assets/Images/LogoBank.png'
 import Gif from '../../Assets/Images/gifTeste.gif'
 
 
@@ -9,7 +9,7 @@ const SectionRotating = () => {
 
 
             {/* Object in the center: */}
-            <div className="box">
+            <div className="box ">
                 {/* itens: */}
                 <span style={{ "--i": 1 }} className='no-select bd-primary-bold bd-rd-2'><img className='bd-rd-2' src={LogoBank} alt="" /></span>
                 <span style={{ "--i": 2 }} className='no-select bd-primary-bold bd-rd-2'><img className='bd-rd-2' src={Gif} alt="" /></span>

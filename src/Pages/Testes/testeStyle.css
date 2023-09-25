@@ -13,18 +13,18 @@
     width: 300px;
     height: 300px;
 
-    border-radius: 30px;
+    border-radius: 20px;
 
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    padding: 0 20px;
 }
 
 .grafico span{
     background-color: var(--color-primary);
     width: calc(80% / var(--length));
-    /* height: calc(var(--i)/100%)  ; */
-    height: var(--size);
+    height: calc(var(--size)*0.9);
 
     border-radius: 10px 10px 0 0;
 }
