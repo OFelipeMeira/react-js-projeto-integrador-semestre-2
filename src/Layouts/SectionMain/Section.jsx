@@ -1,4 +1,4 @@
-import '../../Assets/Styles/SectionsStyle.css'
+import './SectionMainStyle.css'
 
 import Title from '../../Components/TitleMain/Title'
 import TitleSub from '../../Components/TitleSub/TitleSub'
@@ -11,10 +11,10 @@ const Section = (props) => {
     const { title, subTitle, btnText, img, textOnRight = false, tag="bg-primary", btnHref} = props
 
     return (
-        <div className={`SectionMain ${tag}`}>
+        <div className={`Section__Main ${tag}`}>
             {textOnRight === false ?
-                <article>
-                    <section>
+                <article >
+                    <section className='Section__item'>
                         <Title text={title} />
                         <TitleSub text={subTitle} />
                         <Button
@@ -23,16 +23,18 @@ const Section = (props) => {
                             href={btnHref}
                         />
                     </section>
-                    <section className='img'>
+                    <section  className='Section__item'>
                         <img src={img} alt="" />
                     </section>
                 </article>
+                
                 :
-                <article>
-                    <section className='img'>
+
+                <article className={`Section__Main ${tag}`}>
+                    <section  className='Section__item'>
                         <img src={img} alt="" />
                     </section>
-                    <section>
+                    <section  className='Section__item'>
                         <Title text={title} />
                         <TitleSub text={subTitle} />
                         <Button

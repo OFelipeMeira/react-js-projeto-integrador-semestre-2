@@ -5,7 +5,10 @@ import LogoBankBlue from '../../Assets/Images/LogoHeaderBlue.png'
 
 const Footer = (props) => {
 
-    const {column1, column2, tag, type= "complete"} = props
+    const {tag, type= "complete"} = props
+
+    const column1 = "Nosso banco"
+    const column2 = ""
 
     return (
         <div className={`Footer ${tag} ${type}`}>

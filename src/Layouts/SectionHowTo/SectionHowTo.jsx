@@ -1,4 +1,4 @@
-import '../../Assets/Styles/SectionsStyle.css'
+import './SectionHowToStyle.css'
 
 import Title from "../../Components/TitleMain/Title";
 import Card from "../../Components/Card/Card";
@@ -14,28 +14,24 @@ const Section = (props) => {
         <div className="SectionHowTo bg-primary">
             <Title text={title} />
 
-            <div className="grid-1-3">
+            <div className="Cards">
                 
                 <Card
                     titleText={"download the app"}
                     descText={"descricao "}
                     img={Card01}
                 />
-
                 <Card
                     titleText={"download the app"}
                     descText={"descricao descricao descricao descricao "}
                     img={Card01}
                 />
-
                 <Card
                     titleText={"download the app"}
                     descText={"descricao descricao descricao descricao descricao descricao descricao descricao descricao "}
                     img={Card01}
                 />
-
             </div>
-
             <Button 
                 text={"Download Now"}
                 tag={"btn_2 box-primary-empty bd-primary-bold"}

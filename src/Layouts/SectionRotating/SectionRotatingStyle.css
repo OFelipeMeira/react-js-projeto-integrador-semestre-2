@@ -19,7 +19,7 @@
     20s - duration of the animation
 
     */
-    animation: animate 20s linear infinite;
+    animation: animate 10s linear infinite;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -33,13 +33,13 @@
     RotateZ: rotation in Z axis
     */
     0%{
-        transform: perspective(10000px) rotateY(0deg) rotateZ(2deg);
+        transform: perspective(100000px) rotateY(0deg) rotateZ(2deg)
     }
     50%{
         transform: perspective(100000px) rotateY(180deg) rotateZ(2deg);
     }
     100%{
-        transform: perspective(100000px) rotateY(360deg) rotateZ(2deg);
+        transform: perspective(100000px) rotateY(360deg) rotateZ(2deg)
     }
 }
 

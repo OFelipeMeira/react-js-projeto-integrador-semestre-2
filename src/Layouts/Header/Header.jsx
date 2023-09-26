@@ -2,31 +2,36 @@ import "./HeaderStyle.css";
 
 import { Link } from "react-router-dom";
 
-// import LogoBank from "../../Assets/Images/LogoBank.png";
 import LogoBankBlue from "../../Assets/Images/LogoHeaderBlue.png";
+import menuHamburguer from "../../Assets/Images/menuHamburguer.png";
 
 import ToggleTheme from "../../Components/ToggleTheme/ToggleTheme";
 import Button from "../../Components/Button/Button";
 
 // import LandingPage from "../../Pages/LandingPage/LandingPage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [hamburguer, setHamburger] = useState("menu-hide");
 
-  const [hamburguer, setHamburger] = useState('show')
-
-  const hide_show = () =>{
-    if (hamburguer ==='show') setHamburger('hide')
-    else setHamburger('show')
-  }
+  const hide_show = (e) => {
+    if (e.target.className === "menu") {
+      if (hamburguer === "menu-show") {
+        setHamburger("menu-hide");
+      } else{
+        setHamburger("menu-show");
+      }
+    }
+    console.warn(hamburguer)
+  };
 
   return (
     <div className={"header bg-primary"}>
-      <Link to="/">
-        <img className="header__logo" src={LogoBankBlue} alt="Logo" />
+      <Link className="header__logo" to="/">
+        <img className="header__img" src={LogoBankBlue} alt="Logo" />
       </Link>
 
-      <div className="header-links">
+      <div className={`header-links ${hamburguer} `}>
         <a className="header__a" href="./about-ezbank" target="">
           About EzBank
         </a>
@@ -48,15 +53,10 @@ const Header = () => {
           tag={"btn_normal box-primary bd-primary-thin"}
           href={"./login?type=2"}
         />
-      <ToggleTheme />
+        <ToggleTheme />
       </div>
 
-
-      <div className="menu-hamburguer" onClick={hide_show}>
-        <span className={`hamburguer-item hamburguer-${hamburguer}`}></span>
-        <span className={`hamburguer-item hamburguer-${hamburguer}`}></span>
-        <span className={`hamburguer-item hamburguer-${hamburguer}`}></span>
-      </div>
+      <img className="menu" src={menuHamburguer} onClick={hide_show} alt="" />
     </div>
   );
 };

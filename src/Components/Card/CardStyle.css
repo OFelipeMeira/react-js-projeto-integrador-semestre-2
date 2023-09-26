@@ -39,3 +39,29 @@
     font-size: 20px;
     text-align: center;
 }
+
+@media (max-width:1200px){
+    .Card{
+        width: 240px;
+        height: 320px;
+    }
+    .Card > h1{
+        font-size: 20px;
+    }
+    .Card > p{
+        font-size: 16px;
+    }
+}
+
+/* @media (max-width:850px){
+    .Card{
+        width: 192px;
+        height: 256px;
+    }
+    .Card > h1{
+        font-size: 16px;
+    }
+    .Card > p{
+        font-size: 13px;
+    }
+} */

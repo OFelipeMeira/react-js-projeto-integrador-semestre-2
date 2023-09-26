@@ -4,3 +4,19 @@
     font-weight: 700;
     margin-bottom: 1vw;
 }
+
+@media (max-width:1400px){
+    .Title{
+        font-size: 40px;
+    }
+}
+@media (max-width:1200px){
+    .Title{
+        font-size: 32px;
+    }
+}
+@media (max-width:850px){
+    .Title{
+        font-size: 25px;
+    }
+}

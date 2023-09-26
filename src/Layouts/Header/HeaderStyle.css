@@ -3,6 +3,7 @@
 .header {
     height: 8vh;
     width: 100vw;
+    min-height: 70px;
     
     position: fixed;
     display: flex;
@@ -16,7 +17,7 @@
 }
 
 /* Header Image Logo */
-.header > a, .header__logo {
+.header > a, .header__img {
     height: 100%;
     cursor: pointer;
 }
@@ -61,49 +62,37 @@
     transform-origin: bottom left;
 }
 
-.menu-hamburguer{
+.menu{
     display: none;
-    height: 60%;
-    aspect-ratio: 1/1;
-    
-    justify-content: space-between;
-    cursor: pointer;
-    /* display: flex; */
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 2vw;
 }
 
-.hamburguer-item{
-    height: 5px;
-    background-color: var(--color-primary);
-    border-radius: 4px;
-}
-
-.hamburguer-hide{
-    width: 30%;
-}
-.hamburguer-show{
-    width: 100%;
-}
-
-@media (max-width: 950px){
-
+@media (max-width:950px){
     .header{
-        justify-content: space-between;
-    }
-
-    .menu-hamburguer{
-        display: flex;
-    }
-
-    .header-links{
-        background-color: #0087ca;
-        position: absolute;
-        right: 0;
-        height: 100vh;
-        width: 40vw;
         flex-direction: column;
+        height: fit-content;
+    }
+    .header__logo{
+        height: 6vh !important;
+        margin: 2vh;
+    }
+    .header-links{
+        display: none;
+        flex-direction: column;
+    }
+    .header-links > *, .header-links > .Button{
+        margin-top: 2vh;
+    }
+    .menu{
+        display: flex;
+        height: 5vh;
+        width: 4vh;
+
+        position: absolute;
+        top: 3.5vh;
+        right: 5vw;
+    }
+    .menu-show{
+        display: flex;
     }
 
 }

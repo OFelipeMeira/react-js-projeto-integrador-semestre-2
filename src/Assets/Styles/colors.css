@@ -1,9 +1,9 @@
 :root {
   --background-primary: #FFF;
-  --background-secondary: #eee;
+  --background-secondary: #EEE;
   --color-primary: #007BFF;
   --font-color-1: #000000;
-  --font-color-2: #fff;
+  --font-color-2: #FFF;
 }
 
 [data-theme="dark"] {

@@ -5,6 +5,7 @@ import SectionRotating from "../../Layouts/SectionRotating/SectionRotating"
 import Footer from "../../Layouts/Footer/Footer"
 
 import HeaderTw from "../../Layouts/HeaderTw/HeaderTw"
+import Header from "../../Layouts/Header/Header"
 
 import Img1 from '../../Assets/Images/LandingPage01.jpg'
 import Img2 from '../../Assets/Images/LandingPage02.jpg'
@@ -12,9 +13,9 @@ import Img2 from '../../Assets/Images/LandingPage02.jpg'
 const LandingPage = () => {
     return (
         <>
-            {/* <Header /> */}
+            <Header />
 
-            <HeaderTw />
+            {/* <HeaderTw /> */}
 
             <SectionMain
                 title={'Your Financial Future Starts Here'}
@@ -22,6 +23,8 @@ const LandingPage = () => {
                 btnText={'Sign Up'}
                 btnHref={"/dashboard"}
                 img={Img1}
+
+                tag={"paddin-header bg-primary"}
 
             />
             <SectionMain
@@ -39,10 +42,10 @@ const LandingPage = () => {
                 title={"Become a partner in 3 simple steps"}
             />
 
-            <SectionRotating />
+            {/* <SectionRotating /> */}
 
             <Footer
-                column1={"Column1"}
+                column1={"Nosso"}
                 column2={"Column2"}
                 tag={'bg-primary-color color-text-2'}
                 type={"complete"}
