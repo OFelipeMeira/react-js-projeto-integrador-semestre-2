@@ -1,38 +1,56 @@
 import './ToggleThemeStyle.css'
-// import imgMoon from '../../Assets/Images/imgMoon.png'
-// import imgSun from '../../Assets/Images/imgSun.png'
-import darkMode from '../../Assets/Images/darkMode.png'
 import darkMode2 from '../../Assets/Images/darkMode2.png'
-import darkMode2White from '../../Assets/Images/darkMode2White.png'
-import { useEffect } from 'react'
 
-const ToggleDarkMode = (props) => {
+import { useContext, useEffect } from 'react'
 
-    const {white=false} = props
-    
+import { GlobalContext } from '../../Util/Context'
+
+const ToggleDarkMode = () => {
+
+    const theContext = useContext(GlobalContext)
+    const {setState} = theContext
+    const {theme} = theContext.contextState
+
     const DOMbody = document.querySelector("body")
-  
-    // const imgSun = "https://cdn-icons-png.flaticon.com/512/192/192538.png"
-    // const imgMoon = "https://www.freeiconspng.com/thumbs/moon-icon/moon-icon-8.png"
 
     const toggleDarkMode = () => {
-        if (DOMbody.getAttribute("data-theme") === "light") {
-            DOMbody.setAttribute("data-theme", 'dark')
+        if (theme === "light") {
+            setTheme("dark")
+            setState({theme:'dark'})
         } else {
-            DOMbody.setAttribute("data-theme", 'light')
+            setTheme("light")
+            setState({theme:'light'})
         }
     }
 
-    useEffect(()=>{
-        DOMbody.setAttribute("data-theme", 'light')
+    const setTheme = (tm) =>{
+        DOMbody.setAttribute("data-theme", tm)
+    }
+
+    const getTheme = ()=>{
+        if (theme === "light") {
+            DOMbody.setAttribute("data-theme", "light")
+        } else {
+            DOMbody.setAttribute("data-theme", "dark")
+        }
+    }
+    
+    useEffect(() => {
+        getTheme()
     },[])
+    
+    useEffect(() => {
+        console.log(theContext)
+        setTheme(theme)
+    },[theme])
+
+
 
     return (
         <div className='ToggleTheme' >
-            <button onClick={toggleDarkMode} style={{backgroundImage:`url(${white===true? darkMode2White : darkMode2})`}}>
-            </button>
+            <button onClick={toggleDarkMode} style={{ backgroundImage: `url(${darkMode2})` }}></button>
         </div>
     )
 }
 
-export default ToggleDarkMode
+export default ToggleDarkMode;

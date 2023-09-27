@@ -15,7 +15,7 @@ const Aside = () => {
         <AsideItem
           text="Menu"
           img={img}
-          goTo={''} // Coming Soon
+          goTo={'/'} // Coming Soon
         />
 
         <AsideItem

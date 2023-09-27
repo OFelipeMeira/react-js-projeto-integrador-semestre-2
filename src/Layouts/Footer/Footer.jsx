@@ -30,6 +30,7 @@ const Footer = (props) => {
             {
                 type==="slim"?
                 <>
+                    <h3></h3>
                 </>
                 :
                 <></>

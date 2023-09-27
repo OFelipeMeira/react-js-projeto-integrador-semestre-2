@@ -8,8 +8,7 @@ import menuHamburguer from "../../Assets/Images/menuHamburguer.png";
 import ToggleTheme from "../../Components/ToggleTheme/ToggleTheme";
 import Button from "../../Components/Button/Button";
 
-// import LandingPage from "../../Pages/LandingPage/LandingPage";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Header = () => {
   const [hamburguer, setHamburger] = useState("menu-hide");
@@ -18,7 +17,7 @@ const Header = () => {
     if (e.target.className === "menu") {
       if (hamburguer === "menu-show") {
         setHamburger("menu-hide");
-      } else{
+      } else {
         setHamburger("menu-show");
       }
     }
@@ -41,17 +40,20 @@ const Header = () => {
           Investments
         </a>
 
-        <Button
-          text={"Log In"}
-          tag={"btn_normal box-primary-empty bd-primary-thin"}
-          href={"./login?type=1"}
-        />
+        <Link to='/login?type=1'>
+          <Button
+            text={"Log In"}
+            tag={"btn_normal box-primary-empty bd-primary-thin"}
+            href={"./login?type=1"}
+          />
+        </Link>
 
-        <Button
-          text={"Sign up"}
-          tag={"btn_normal box-primary bd-primary-thin"}
-          href={"./login?type=2"}
-        />
+        <Link to='/login?type=2'>
+          <Button
+            text={"Sign up"}
+            tag={"btn_normal box-primary bd-primary-thin"}
+          />
+        </Link>
         <ToggleTheme />
       </div>
 

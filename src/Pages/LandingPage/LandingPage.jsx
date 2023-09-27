@@ -1,10 +1,8 @@
-// import Header from "../../Layouts/Header/Header"
 import SectionMain from "../../Layouts/SectionMain/Section"
 import SectionHowTo from "../../Layouts/SectionHowTo/SectionHowTo"
-import SectionRotating from "../../Layouts/SectionRotating/SectionRotating"
+// import SectionRotating from "../../Layouts/SectionRotating/SectionRotating"
 import Footer from "../../Layouts/Footer/Footer"
 
-import HeaderTw from "../../Layouts/HeaderTw/HeaderTw"
 import Header from "../../Layouts/Header/Header"
 
 import Img1 from '../../Assets/Images/LandingPage01.jpg'
@@ -14,8 +12,6 @@ const LandingPage = () => {
     return (
         <>
             <Header />
-
-            {/* <HeaderTw /> */}
 
             <SectionMain
                 title={'Your Financial Future Starts Here'}
@@ -38,9 +34,7 @@ const LandingPage = () => {
                 tag={"bg-secondary"}
             />
 
-            <SectionHowTo
-                title={"Become a partner in 3 simple steps"}
-            />
+            <SectionHowTo title={"Become a partner in 3 simple steps"}/>
 
             {/* <SectionRotating /> */}
 

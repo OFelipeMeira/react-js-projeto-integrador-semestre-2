@@ -4,29 +4,30 @@ const FormComponent = (props) => {
   const { type = "Login" } = props;
 
   return (
-    <form className="Form">
+    <form className="Form grid-1-4">
       {type === "Login" ? (
         <>
-          <h1 className="color-primary grid-1-4">Log in</h1>
+          <h1 className="Form__title">Log in</h1>
 
           <input
-            className="bd-primary-normal bd-rd-1 bg-primary"
+            className="Form__input"
             type="text"
             name="Login"
             placeholder="Login"
           />
 
           <input
-            className="bd-primary-normal bd-rd-1 bg-primary"
+            className="Form__input"
             type="password"
             name="Password"
             placeholder="Password"
           />
 
-          <button type="submit" className="box-primary bd-none bd-rd-1 bd-primary-normal">
+          <button type="submit" className="Form__button">
             Submit
           </button>
         </>
+
       ) : (
         <></>
       )}
