@@ -46,7 +46,6 @@ const LandingPage = () => {
 
             <Footer
                 column1={"Nosso"}
-                column2={"Column2"}
                 tag={'bg-primary-color color-text-2'}
                 type={"complete"}
             />

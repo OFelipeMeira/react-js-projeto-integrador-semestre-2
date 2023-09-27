@@ -22,7 +22,6 @@ const Header = () => {
         setHamburger("menu-show");
       }
     }
-    console.warn(hamburguer)
   };
 
   return (

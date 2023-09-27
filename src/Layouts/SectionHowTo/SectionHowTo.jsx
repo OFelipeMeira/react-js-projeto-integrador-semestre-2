@@ -22,12 +22,12 @@ const Section = (props) => {
                     img={Card01}
                 />
                 <Card
-                    titleText={"download the app"}
+                    titleText={"create your account"}
                     descText={"descricao descricao descricao descricao "}
                     img={Card01}
                 />
                 <Card
-                    titleText={"download the app"}
+                    titleText={"enjoy our bank"}
                     descText={"descricao descricao descricao descricao descricao descricao descricao descricao descricao "}
                     img={Card01}
                 />
