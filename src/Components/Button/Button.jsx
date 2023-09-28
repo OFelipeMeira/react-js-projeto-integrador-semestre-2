@@ -6,7 +6,7 @@ const Button = (props) =>{
     const {text, tag} = props
 
     return(
-        <a className={`Button ${tag}`}>{text}</a>
+        <p className={`Button ${tag}`}>{text}</p>
     )
 }
 

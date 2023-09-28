@@ -1,5 +1,5 @@
 import "./SectionGraphsStyle.css";
-import img from '../../Assets/Images/LogoBank.png'
+import img from '../../Assets/Images/LogoWhite.png'
 import CardSide from "../../Components/CardSide/CardSide";
 
 const SectionGraphs = () => {

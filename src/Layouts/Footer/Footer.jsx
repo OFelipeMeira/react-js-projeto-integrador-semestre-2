@@ -1,17 +1,22 @@
 import './FooterStyle.css'
-import LogoBank from './../../Assets/Images/LogoBank.png'
-import LogoBankBlue from '../../Assets/Images/LogoHeaderBlue.png'
+import LogoWhite from './../../Assets/Images/LogoWhite.png'
+import LogoBlue from '../../Assets/Images/LogoBlue.png'
+
+import { useContext, useEffect, useState } from 'react'
+import { GlobalContext } from "../../Util/Context";
 
 
 const Footer = (props) => {
 
     const {tag, type= "complete"} = props
-
     const column1 = ""
+
+    const theContext = useContext(GlobalContext);
+    const { theme } = theContext.contextState;
 
     return (
         <div className={`Footer ${tag} ${type}`}>
-            <img className="Footer__logo"src={LogoBank} alt="Logo" />
+            <img className={`Footer__logo filter-${theme}`}src={LogoWhite} alt="Logo" />
 
             {
                 type==="complete"?

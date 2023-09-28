@@ -2,7 +2,7 @@ import "./HeaderStyle.css";
 
 import { Link } from "react-router-dom";
 
-import LogoBankBlue from "../../Assets/Images/LogoHeaderBlue.png";
+import LogoBlue from "../../Assets/Images/LogoBlue.png";
 import menuHamburguer from "../../Assets/Images/menuHamburguer.png";
 
 import ToggleTheme from "../../Components/ToggleTheme/ToggleTheme";
@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <div className={"header bg-primary"}>
       <Link className="header__logo" to="/">
-        <img className="header__img" src={LogoBankBlue} alt="Logo" />
+        <img className="header__img" src={LogoBlue} alt="Logo" />
       </Link>
 
       <div className={`header-links ${hamburguer} `}>
@@ -40,7 +40,7 @@ const Header = () => {
           Investments
         </a>
 
-        <Link to='/login?type=1'>
+        <Link to='/login?type=1' style={{textDecoration:0}}>
           <Button
             text={"Log In"}
             tag={"btn_normal box-primary-empty bd-primary-thin"}
@@ -48,7 +48,7 @@ const Header = () => {
           />
         </Link>
 
-        <Link to='/login?type=2'>
+        <Link to='/login?type=2' style={{textDecoration:0}}>
           <Button
             text={"Sign up"}
             tag={"btn_normal box-primary bd-primary-thin"}

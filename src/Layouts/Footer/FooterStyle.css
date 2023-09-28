@@ -24,6 +24,7 @@
     margin-left: 25px;
 }
 
+
 .Footer__list{
     display: flex;
     flex-direction: column;
@@ -39,6 +40,12 @@
     padding: 0;
 }
 
+.filter-dark{
+    filter: brightness(0);
+}
+.filter-light{
+    filter: brightness(1);
+}
 
 .slim{
     height: 15vh;
