@@ -1,0 +1,21 @@
+.SectionCards{
+    background-color: var(--background-secondary);
+    padding: 10vh 0vw;
+}
+
+.Cards{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Cards .CardSide{
+    margin: 2vh 1vw;
+}
+.SectionCards__title{
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 3vh;
+}

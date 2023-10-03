@@ -24,21 +24,27 @@
 .Form__input{
     height: 30%;
     width: 80%;
-    padding: 0.5rem;
+    padding: 1rem;
 
-    border-radius: 10px;
-    border: 3px solid var(--color-primary);
-    background-color: var(--background-secondary);
+    /* border-radius: 10px; */
+    border: none;
+    border-bottom: 3px solid var(--color-primary);
+    background-color: transparent;
     
     font-weight: 500;
     font-size: 1.2rem;
     margin: 0 auto;
-    color: var(--font-color-1);
+    color: var(--color-primary);
 }
-.Form__input:focus{
+.Form__input:focus {
     outline: none;
-    background-color: var(--color-primary);
-    color: var(--font-color-2);
+    /* background-color: var(--color-primary); */
+    /* color: var(--font-color-2); */
+
+}
+.Form__input::placeholder{
+    color: var(--color-primary);
+    font-weight: 600;
 }
 
 .Form__title{

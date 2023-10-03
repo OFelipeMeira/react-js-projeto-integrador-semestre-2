@@ -19,18 +19,24 @@
     justify-content: center;
 }
 
+.Section__item > a{
+    text-decoration: none;
+}
+
 .Section__Main p {
     color: var(--font-color-1);
     font-size: 20px;
     font-weight: 300;
 }
 
-.Section__item img{
+.Section__img{
     border-radius: 50px;
 }
 
 .Section__Main .Button{
     margin: 0;
+    color: var(--font-color-2);
+    font-weight: 500;
 }
 
 @media (max-width:750px){

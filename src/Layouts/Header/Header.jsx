@@ -33,14 +33,14 @@ const Header = () => {
         <a className="header__a" href="./about-ezbank" target="">
           About EzBank
         </a>
-        <a className="header__a" href="/cards" target="">
-          Cards
+        <a className="header__a" href="/card" target="">
+          EzCard
         </a>
         <a className="header__a" href="/investments" target="">
           Investments
         </a>
 
-        <Link to='/login?type=1' style={{textDecoration:0}}>
+        <Link to='/login?type=2' style={{textDecoration:0}}>
           <Button
             text={"Log In"}
             tag={"btn_normal box-primary-empty bd-primary-thin"}
@@ -48,7 +48,7 @@ const Header = () => {
           />
         </Link>
 
-        <Link to='/login?type=2' style={{textDecoration:0}}>
+        <Link to='/login?type=1' style={{textDecoration:0}}>
           <Button
             text={"Sign up"}
             tag={"btn_normal box-primary bd-primary-thin"}

@@ -4,7 +4,7 @@ import Title from "../../Components/TitleMain/Title";
 import Card from "../../Components/Card/Card";
 import Button from '../../Components/Button/Button';
 
-import Card01 from '../../Assets/Images/Card01.jpg'
+import Card01 from '../../Assets/Images/WireBox.png'
 
 const Section = (props) => {
 

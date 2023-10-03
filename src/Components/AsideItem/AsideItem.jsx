@@ -1,7 +1,5 @@
 import './AsideItemStyle.css'
 
-import React from 'react'
-
 const Asideitem = (props) => {
 
     const {text, img, goTo} = props

@@ -1,6 +1,6 @@
 import SectionMain from "../../Layouts/SectionMain/Section"
 import SectionHowTo from "../../Layouts/SectionHowTo/SectionHowTo"
-// import SectionRotating from "../../Layouts/SectionRotating/SectionRotating"
+import SectionRotating from "../../Layouts/SectionRotating/SectionRotating"
 import Footer from "../../Layouts/Footer/Footer"
 
 import Header from "../../Layouts/Header/Header"
@@ -16,27 +16,28 @@ const LandingPage = () => {
             <SectionMain
                 title={'Your Financial Future Starts Here'}
                 subTitle={'Discover a world of opportunities with our digital bank.'}
+                img={Img1}
+                // haveButton={false}                
                 btnText={'Sign Up'}
                 btnHref={"/dashboard"}
-                img={Img1}
-
                 tag={"paddin-header bg-primary"}
 
             />
             <SectionMain
                 title={'Technology and Finance: Together in One Place'}
                 subTitle={'The digital revolution has arrived in the financial world. Are you ready?'}
-                btnText={'Know More'}
                 btnHref={''}
                 img={Img2}
-
+                haveButton={false}
+                btnText={'Know More'}
                 textOnRight={true}
                 tag={"bg-secondary"}
             />
 
             <SectionHowTo title={"Become a partner in 3 simple steps"}/>
 
-            {/* <SectionRotating /> */}
+            <SectionRotating
+            />
 
             <Footer
                 column1={"Nosso"}

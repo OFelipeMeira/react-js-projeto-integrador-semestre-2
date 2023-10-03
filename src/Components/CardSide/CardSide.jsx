@@ -4,10 +4,10 @@ const CardSide = (props) => {
   const { title, img, subTitle } = props;
   return (
     <div className="CardSide">
-      <img src={img} alt="" />
+      <img className="CardSide__img" src={img} alt="" />
       <div>
-        <h1>{title}</h1>
-        <h2>{subTitle}</h2>
+        <h1 className="CardSide__title">{title}</h1>
+        <h2 className="CardSide__sub">{subTitle}</h2>
       </div>
     </div>
   );

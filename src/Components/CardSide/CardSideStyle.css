@@ -2,27 +2,26 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
 
-    width: 350px;
-    height: 120px;
+    width: 300px;
+    aspect-ratio: 3/1;
 
     align-items: center;
-    background-color: var(--background-secondary);
-    box-shadow: 3px 3px 5px #a7a7a7;
+    background-color: transparent;
     border-radius: 20px;
-    padding: 20px;
 }
 
-.CardSide > img{
+.CardSide__img{
     width: 100%;
-    padding: 5px;
+    height: 100%;
+    padding: 10%;
 }
 
-.CardSide h2{
+.CardSide__sub{
     text-align: end;
     color: var(--color-primary);
 }
 
-.CardSide h1{
+.CardSide__title{
     color: #3f3f3f;
     font-size: 24px ;
 }

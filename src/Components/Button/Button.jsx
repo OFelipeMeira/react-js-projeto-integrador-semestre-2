@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import './ButtonStyle.css'
 
 const Button = (props) =>{
@@ -6,7 +5,7 @@ const Button = (props) =>{
     const {text, tag} = props
 
     return(
-        <p className={`Button ${tag}`}>{text}</p>
+        <p className={`Button no-select ${tag}`}>{text}</p>
     )
 }
 
