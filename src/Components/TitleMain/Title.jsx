@@ -4,7 +4,7 @@ const Title = (props)=> {
     const {text} = props
     
     return(
-        <h1 className='Title'>{text}</h1>
+        <h1 className="Title">{text}</h1>
     )
 }
 

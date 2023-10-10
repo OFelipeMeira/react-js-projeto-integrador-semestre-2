@@ -1,5 +1,3 @@
-import React, { useEffect } from "react";
-
 import Header from "../../Layouts/Header/Header";
 import Footer from "../../Layouts/Footer/Footer";
 import Section from "../../Layouts/SectionMain/Section";
@@ -56,6 +54,7 @@ const Cards = () => {
         btnHref={"/login?type=1"}
         btnText={"Register"}
         tag={"bg-secondary"}
+        textJustify={"flex-end"}
       />
 
       <Footer

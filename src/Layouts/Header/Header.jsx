@@ -29,9 +29,9 @@ const Header = () => {
       </Link>
 
       <div className={`header-links ${hamburguer} `}>
-        <Link className="header__a" to="./about-ezbank" target="">
+        {/* <Link className="header__a" to="/about-ezbank" target="">
           About EzBank
-        </Link>
+        </Link> */}
         <Link className="header__a" to="/card" target="">
           EzCard
         </Link>

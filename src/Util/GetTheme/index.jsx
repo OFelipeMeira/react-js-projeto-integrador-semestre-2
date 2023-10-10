@@ -18,10 +18,7 @@ const useTheme = () => {
       
     useEffect(()=>{
         getTheme();
-    },[])
-
-
-    // return getTheme;
+    },)
 }
 
 export default useTheme

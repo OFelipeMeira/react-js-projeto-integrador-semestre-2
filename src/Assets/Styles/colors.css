@@ -7,9 +7,11 @@
 }
 
 [data-theme="dark"] {
+  /* --background-primary: #202020; */
+  /* --background-secondary: #3f3f3f; */
   --background-primary: #202020;
-  --background-secondary: #3f3f3f;
-  --color-primary: #2890ff;
+  --background-secondary: #252525;
+  --color-primary: #007BFF;
   --font-color-1: #ffffff;
   --font-color-2: #000000;
 }

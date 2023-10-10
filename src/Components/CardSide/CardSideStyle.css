@@ -22,7 +22,8 @@
 }
 
 .CardSide__title{
-    color: #3f3f3f;
+    /* color: var(--font-color-1); */
+    color: black;
     font-size: 24px ;
 }
 

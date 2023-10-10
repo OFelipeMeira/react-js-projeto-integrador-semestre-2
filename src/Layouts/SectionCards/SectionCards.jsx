@@ -10,7 +10,7 @@ import SecurityIcon from "../../Assets/Images/securityIcon.png";
 
 const SectionCards = () => {
   return (
-    <div className="SectionCards">
+    <div className="SectionCards bg-secondary">
       <h1 className="SectionCards__title">Some of our benefits</h1>
 
       <div className="Cards">

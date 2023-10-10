@@ -10,24 +10,29 @@ const Section = (props) => {
   const {
     title,
     subTitle,
-    btnText,
     img,
     textOnRight = false,
     tag = "bg-primary",
+    btnText,
     btnHref,
+    textJustify="right",
     haveButton = true,
   } = props;
+
+  const margin = textJustify==="right"? "none": '10%'
+
+
 
   return (
     <div className={`Section__Main ${tag}`}>
       {textOnRight === false ? (
         <article>
           <section className="Section__item">
-            <Title text={title} />
+            <Title text={title} justify={textJustify} />
             <TitleSub text={subTitle} />
 
             {haveButton === true ? (
-              <Link to={btnHref} style={{width:'fit-content'}}>
+              <Link to={btnHref} style={{width:'fit-content', alignSelf:textJustify, marginRight:margin  }}>
                 <Button
                   tag={"box-primary btn_1"}
                   text={btnText}
