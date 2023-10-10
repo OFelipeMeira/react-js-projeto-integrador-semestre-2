@@ -26,8 +26,8 @@ const Section = (props) => {
             <Title text={title} />
             <TitleSub text={subTitle} />
 
-            {haveButton == true ? (
-              <Link to={btnHref}>
+            {haveButton === true ? (
+              <Link to={btnHref} style={{width:'fit-content'}}>
                 <Button
                   tag={"box-primary btn_1"}
                   text={btnText}
@@ -39,18 +39,18 @@ const Section = (props) => {
             )}
           </section>
           <section className="Section__item">
-            <img className="Section__img" src={img} />
+            <img className="Section__img" src={img} alt=""/>
           </section>
         </article>
       ) : (
         <article className={`Section__Main ${tag}`}>
           <section className="Section__item">
-            <img className="Section__img" src={img} />
+            <img className="Section__img" src={img} alt=""/>
           </section>
           <section className="Section__item">
             <Title text={title} />
             <TitleSub text={subTitle} />
-            {haveButton == true ? (
+            {haveButton === true ? (
               <Link to={btnHref}>
                 <Button
                   tag={"box-primary btn_1"}

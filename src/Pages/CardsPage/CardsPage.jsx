@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Header from "../../Layouts/Header/Header";
 import Footer from "../../Layouts/Footer/Footer";
@@ -9,7 +9,12 @@ import Img1 from "../../Assets/Images/HappyManCard.jpg";
 import Img2 from "../../Assets/Images/HappyWomanCard.jpg";
 import Img3 from '../../Assets/Images/HappyWomanCard2.jpg'
 
+import useTheme from "../../Util/GetTheme";
+
 const Cards = () => {
+
+	useTheme()
+  
   return (
     <>
       <Header />

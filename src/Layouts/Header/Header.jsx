@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import LogoBlue from "../../Assets/Images/LogoBlue.png";
 import menuHamburguer from "../../Assets/Images/menuHamburguer.png";
-
 import ToggleTheme from "../../Components/ToggleTheme/ToggleTheme";
 import Button from "../../Components/Button/Button";
 
@@ -30,15 +29,15 @@ const Header = () => {
       </Link>
 
       <div className={`header-links ${hamburguer} `}>
-        <a className="header__a" href="./about-ezbank" target="">
+        <Link className="header__a" to="./about-ezbank" target="">
           About EzBank
-        </a>
-        <a className="header__a" href="/card" target="">
+        </Link>
+        <Link className="header__a" to="/card" target="">
           EzCard
-        </a>
-        <a className="header__a" href="/investments" target="">
+        </Link>
+        <Link className="header__a" to="/investments" target="">
           Investments
-        </a>
+        </Link>
 
         <Link to='/login?type=2' style={{textDecoration:0}}>
           <Button
