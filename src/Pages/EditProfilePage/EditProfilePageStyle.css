@@ -4,11 +4,24 @@
 
 .Profile-Form{
     width: 80vw;
-    background-color: red;
+    background-color: rgb(30, 255, 0);
     margin: 0 auto;
     padding: 3vw 5vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.form-group{
-    margin-bottom: 5vh;
+.Profile-Form > button{
+    padding: 2vw 1vh;
+}
+
+.Profile-Form__input{
+    margin: 1vh 1vw;
+    border: 2px solid var(--color-primary);
+    border-radius: 7px;
+    padding: 0.5rem;
+}
+
+.Profile-Form__input:disabled{
+    filter: brightness(0.7);
 }

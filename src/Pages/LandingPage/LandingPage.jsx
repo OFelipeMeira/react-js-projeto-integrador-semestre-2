@@ -11,9 +11,23 @@ import Img2 from "../../Assets/Images/LandingPage02.jpg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import axios from "axios";
+
+
 const LandingPage = () => {
+
+   useEffect(()=>{
+
+      const email = "aa@ccc"
+      const baseURL = `https://www.disify.com/api/email/your@example.com`;
+      axios.get(baseURL).then((response) => {
+         console.log(response);
+      });
+    
+   }, [])
+
    
-    const { pathname } = useLocation();
+   const { pathname } = useLocation();
 
    useEffect(() => {
       window.scrollTo(0, 0);

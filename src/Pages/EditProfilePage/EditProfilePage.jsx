@@ -1,29 +1,33 @@
 import './EditProfilePageStyle.css'
+import { useState } from 'react'
 
 const EditProfilePage = () => {
+
+  const [isDisabled, setDisable] = useState("")
+
+  const a = ""
+
+  const editHandler = () =>{
+    setDisable(!isDisabled)
+  }
+
   return (
     <div className="EditProfilePage">
 
     <form className='Profile-Form'>
-        
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name"/>
-        </div>
-        
-        <div class="form-group">
-            <label for="name">Email</label>
-            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Email"/>
-        </div>
+      <input type="checkbox" name="edit" id="Profile-edit" onChange={editHandler} />
 
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
-        </div>
+      <input className='Profile-Form__input' type="text" placeholder='name' disabled={isDisabled}/>
+      <input className='Profile-Form__input' type="text" placeholder='email' disabled={isDisabled}/>
+      <input className='Profile-Form__input' type="text" placeholder='phone' disabled={isDisabled}/>
+      <input className='Profile-Form__input' type="text" placeholder='address' disabled={isDisabled}/>
+      <input className='Profile-Form__input' type="text" placeholder='city' disabled={isDisabled}/>
+      <input className='Profile-Form__input' type="text" placeholder='state' disabled={isDisabled}/>
+      <input className='Profile-Form__input' type="text" placeholder='country' disabled={isDisabled}/>
+      <input className='Profile-Form__input' type="text" placeholder='complemet' disabled={isDisabled}/>
+      <input className='Profile-Form__input' type="text" placeholder='cep' disabled={isDisabled}/>
 
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-
+      <button >Save</button>
     </form>
 
     </div>

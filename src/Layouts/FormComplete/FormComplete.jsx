@@ -45,8 +45,8 @@ const FormLoginRegister = () => {
 
   //setting cover position, by type
   const get_type = () =>{
-    if (intType === 1) showLogIn();
     if (intType === 2) showSignUp();
+    else showLogIn();
   }
 
   //on load, set position
