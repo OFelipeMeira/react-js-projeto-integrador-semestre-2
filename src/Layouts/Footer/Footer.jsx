@@ -3,6 +3,7 @@ import LogoWhite from "./../../Assets/Images/LogoWhite.png";
 
 import { useContext } from "react";
 import { GlobalContext } from "../../Util/Context";
+import { Link } from "react-router-dom";
 
 const Footer = (props) => {
   const { tag, type = "complete" } = props;
@@ -24,24 +25,19 @@ const Footer = (props) => {
           <ul className="Footer__list">
             <h3 className="Footer__title">{column1}</h3>
             <li className="Footer__list_item">
-              <a className="Footer__link" href="">
+              <Link className="Footer__link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="Footer__list_item">
-              <a className="Footer__link" href="">
-                About Ezbank
-              </a>
-            </li>
-            <li className="Footer__list_item">
-              <a className="Footer__link" href="">
+              <Link className="Footer__link" to="/card">
                 Cards
-              </a>
+              </Link>
             </li>
             <li className="Footer__list_item">
-              <a className="Footer__link" href="">
+              <Link className="Footer__link" to="/investments">
                 Investments
-              </a>
+              </Link>
             </li>
           </ul>
         </>
@@ -50,7 +46,6 @@ const Footer = (props) => {
       )}
       {type === "slim" ? (
         <>
-          <h3></h3>
         </>
       ) : (
         <></>

@@ -75,7 +75,7 @@ const SectionRotating = () => {
           <li className="Aside-Text__item">Credit Building</li>
           <li className="Aside-Text__item">Rewards</li>
         </ul>
-        <Link to="/" className="Aside-Text__btn">
+        <Link to="/login?type=2" className="Aside-Text__btn">
           <Buttom text="Get in tune" />
         </Link>
       </div>

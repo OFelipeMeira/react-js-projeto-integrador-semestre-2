@@ -9,9 +9,18 @@ import Img3 from '../../Assets/Images/HappyWomanCard2.jpg'
 
 import useTheme from "../../Util/GetTheme";
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Cards = () => {
 
 	useTheme()
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   
   return (
     <>
