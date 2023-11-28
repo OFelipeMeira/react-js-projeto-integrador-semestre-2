@@ -1,3 +1,4 @@
 export const globalState = {
-    theme: 'light'
+    theme: 'light',
+    tokem: ''
 }

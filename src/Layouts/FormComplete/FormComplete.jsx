@@ -1,12 +1,17 @@
 import "./FormCompleteStyle.css";
 import FormComponent from "../../Components/FormComponent/FormComponent";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { GlobalContext } from "../../Util/Context";
 
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
 const FormLoginRegister = () => {
+    const theContext = useContext(GlobalContext);
+    const { setState } = theContext;
+    const { token } = theContext.contextState;
+
     // Cover Variables
     const [pos, setPos] = useState("Left");
     const [title, setTitle] = useState("");
@@ -74,6 +79,7 @@ const FormLoginRegister = () => {
     const [lastName, setLastName] = useState("");
     const [CPF, setCPF] = useState("");
 
+    // method to log in
     const login = () => {
         axios
             .post("http://127.0.0.1:8000/api/token/", {
@@ -83,7 +89,9 @@ const FormLoginRegister = () => {
             .then((res) => {
                 console.log(email);
                 console.log(res.data.access);
+                setState({ token: res.data.access });
                 notifyLogged();
+                navigate('/profile')
             })
             .catch((err) => {
                 console.log(err);

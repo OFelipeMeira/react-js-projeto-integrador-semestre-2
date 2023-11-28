@@ -53,6 +53,18 @@
   cursor: pointer;
 }
 
+.box-logout-empty{
+  background-color: transparent;
+  color: var(--error);
+  cursor: pointer;
+}
+
+.box-logout-empty:hover{
+  background-color: var(--error);
+  color: var(--font-color-2);
+  cursor: pointer;
+}
+
 .box-primary-static{
   background-color: var(--color-primary);
   color: var(--font-color-2);
@@ -83,6 +95,10 @@
 
 .bd-primary-thin{
   border: 1px solid var(--color-primary);
+}
+
+.bd-error-thin{
+  border: 1px solid var(--error);
 }
 
 .bd-primary-normal{

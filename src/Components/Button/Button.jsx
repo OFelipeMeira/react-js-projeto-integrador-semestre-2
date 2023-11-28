@@ -2,10 +2,10 @@ import './ButtonStyle.css'
 
 const Button = (props) =>{
 
-    const {text, tag} = props
+    const {text, tag, onClick} = props
 
     return(
-        <p className={`Button no-select ${tag}`}>{text}</p>
+        <p onClick={onClick} className={`Button no-select ${tag}`}>{text}</p>
     )
 }
 

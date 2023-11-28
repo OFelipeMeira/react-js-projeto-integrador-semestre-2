@@ -7,6 +7,7 @@ import Header from "../../Layouts/Header/Header";
 
 import Img1 from "../../Assets/Images/LandingPage01.jpg";
 import Img2 from "../../Assets/Images/LandingPage02.jpg";
+import Img3 from "../../Assets/Images/HappyCouple.jpg";
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -30,11 +31,10 @@ const LandingPage = () => {
                     "Discover a world of opportunities with our digital bank."
                 }
                 img={Img1}
-                // haveButton={false}
                 btnText={"Sign Up"}
-                // btnHref={"/dashboard"}
                 tag={"paddin-header bg-primary"}
             />
+
             <SectionMain
                 title={"Technology and Finance: Together in One Place"}
                 subTitle={
@@ -48,9 +48,13 @@ const LandingPage = () => {
                 tag={"bg-secondary"}
             />
 
-            {/* <SectionHowTo title={"Become a partner in 3 simple steps"} /> */}
-
-            {/* <SectionRotating /> */}
+            <SectionMain
+                title={"Your Financial Future Starts Here"}
+                subTitle={"Discover a world of opportunities with our digital bank."}
+                img={Img3}
+                haveButton={false}
+                tag={"bg-primary"}
+            />
 
             <Footer
                 column1={"Nosso"}

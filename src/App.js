@@ -5,8 +5,7 @@ import LandingPage from "./Pages/LandingPage/LandingPage";
 import Cards from "./Pages/CardsPage/CardsPage";
 import AboutPage from "./Pages/InvestmentsPage/InvestmentsPage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
-// import DashboardPage from './Pages/-DashboardPage'
-// import EditProfilePage from "./Pages/EditProfilePage/EditProfilePage";
+import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 
 // import Testes from './Pages/Testes/Testes'
 
@@ -27,9 +26,7 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/card" element={<Cards />} />
             <Route path="/investments" element={<AboutPage />} />
-            {/* <Route path="/profile" element={<EditProfilePage />} /> */}
-            {/* <Route path="/dashboard" element={<DashboardPage />} />
-            <Route path="/teste" element={<Testes />} /> */}
+            <Route path="/profile" element={<ProfilePage />} />
           </Routes>
         </BrowserRouter>
 

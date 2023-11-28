@@ -4,6 +4,7 @@
   --color-primary: #007BFF;
   --font-color-1: #000000;
   --font-color-2: #FFF;
+  --error: rgb(199, 0, 0);
 }
 
 [data-theme="dark"] {
@@ -14,4 +15,5 @@
   --color-primary: #007BFF;
   --font-color-1: #ffffff;
   --font-color-2: #000000;
+  --error: rgb(199, 0, 0);
 }
