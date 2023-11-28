@@ -61,6 +61,7 @@
     margin: 0 auto;
     width: 50%;
     height: 50%;
+    min-height: 40px;
 
     font-weight: 700;
     font-size: 1.3rem;

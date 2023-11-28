@@ -1,19 +1,22 @@
 import "./FormComponentStyle.css";
 
 const FormComponent = (props) => {
-  const { type = "Login" } = props;
+  // const { type = "Login"} = props;
+  // const { type, } = props;
 
   return (
     <form className="Form">
-      {type === "Login" ? (
+      {props.type === "Login" ? (
         <>
-          <h1 className="Form__title">Log in</h1>
+          <h1 className="Form__title">Login</h1>
 
           <input
+            // onChange={}
             className="Form__input"
             type="text"
             name="Login"
-            placeholder="Login"
+            // placeholder="Email"
+            placeholder={onchange}
           />
 
           <input
@@ -32,7 +35,7 @@ const FormComponent = (props) => {
         <></>
       )}
 
-      {type === "Signup" ? (
+      {props.type === "Signup" ? (
         <>
           <h1 className="Form__title">Sign up</h1>
 

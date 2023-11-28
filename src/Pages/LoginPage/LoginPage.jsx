@@ -8,10 +8,11 @@ const LoginPage = () => {
     <div className="LoginPage">
         <Header />
         <FormComplete />
-        <Footer 
-          type={"slim"}
-          tag={'bg-primary-color'}
-        />
+        {/* <Footer
+            column1={"Nosso"}
+            tag={"bg-primary-color color-text-2"}
+            type={"complete"}
+         /> */}
     </div>
   );
 };

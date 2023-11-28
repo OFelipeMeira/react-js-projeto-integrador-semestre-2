@@ -1,7 +1,7 @@
 import Header from "../../Layouts/Header/Header";
 import Footer from "../../Layouts/Footer/Footer";
 import Section from "../../Layouts/SectionMain/Section";
-import SectionCards from "../../Layouts/SectionCards/SectionCards";
+// import SectionCards from "../../Layouts/SectionCards/SectionCards";
 
 import Img1 from "../../Assets/Images/HappyManCard.jpg";
 import Img2 from "../../Assets/Images/HappyWomanCard.jpg";
@@ -52,7 +52,7 @@ const Cards = () => {
         tag={"bg-secondary"}
       />
 
-      <SectionCards />
+      {/* <SectionCards /> */}
 
       <Section
         title={"Get Now Your Unique Card"}

@@ -1,8 +1,10 @@
 
 .Form-container{
+    height: 60vh;
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 
 }
 
