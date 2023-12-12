@@ -1,5 +1,6 @@
 import './TitleStyle.css'
 
+// Title component, styled in './Assets/Styles/index.css'
 const Title = (props)=> {
     const {text} = props
     

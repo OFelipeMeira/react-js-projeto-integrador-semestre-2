@@ -1,7 +1,6 @@
 import Header from "../../Layouts/Header/Header";
 import Footer from "../../Layouts/Footer/Footer";
 import Section from "../../Layouts/SectionMain/Section";
-// import SectionCards from "../../Layouts/SectionCards/SectionCards";
 
 import Img1 from "../../Assets/Images/HappyManCard.jpg";
 import Img2 from "../../Assets/Images/HappyWomanCard.jpg";
@@ -14,10 +13,13 @@ import { useLocation } from "react-router-dom";
 
 const Cards = () => {
 
+  // geting the theme (dark/light)
 	useTheme()
 
+  // variable to save URL
   const { pathname } = useLocation();
 
+  // method to scroll to top on load
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);

@@ -1,5 +1,6 @@
 import './ButtonStyle.css'
 
+// button to redirect between pages
 const Button = (props) =>{
 
     const {text, tag, onClick} = props

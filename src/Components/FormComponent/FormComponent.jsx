@@ -1,9 +1,7 @@
 import "./FormComponentStyle.css";
 
+// component to creata form in login and sign up
 const FormComponent = (props) => {
-  // const { type = "Login"} = props;
-  // const { type, } = props;
-
   return (
     <form className="Form">
       {props.type === "Login" ? (

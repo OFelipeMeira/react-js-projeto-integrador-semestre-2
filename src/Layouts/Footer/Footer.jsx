@@ -5,10 +5,13 @@ import { useContext } from "react";
 import { GlobalContext } from "../../Util/Context";
 import { Link } from "react-router-dom";
 
+// Footer from the app
 const Footer = (props) => {
+  // type of the footer - full sized or slim
   const { tag, type = "complete" } = props;
   const column1 = "";
 
+  // global variables
   const theContext = useContext(GlobalContext);
   const { theme } = theContext.contextState;
 

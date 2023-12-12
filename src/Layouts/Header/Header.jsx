@@ -11,12 +11,18 @@ import { useState, useContext, useEffect } from "react";
 
 import { GlobalContext } from "../../Util/Context";
 
+
+// Header for the app
 const Header = () => {
+   // get context info
    const theContext = useContext(GlobalContext);
+   // get token from context
    const { token } = theContext.contextState;
 
+   // add class to turn mobile sized - if needed
    const [hamburguer, setHamburger] = useState("menu-hide");
 
+   // menu hamburguer - show/hide
    const hide_show = (e) => {
       if (e.target.className === "menu") {
          if (hamburguer === "menu-show") {
@@ -27,6 +33,7 @@ const Header = () => {
       }
    };
 
+   // print token
    useEffect(() => {
       console.log("token");
       console.log(token);

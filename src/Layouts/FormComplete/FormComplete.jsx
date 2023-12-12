@@ -7,7 +7,9 @@ import { GlobalContext } from "../../Util/Context";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
+// Component to login and sign up
 const FormLoginRegister = () => {
+    // global variables
     const theContext = useContext(GlobalContext);
     const { setState } = theContext;
     const { token } = theContext.contextState;
@@ -99,6 +101,7 @@ const FormLoginRegister = () => {
             });
     };
 
+    // method to sing up
     const singup = () => {
         axios
             .post("http://127.0.0.1:8000/api/v1/user/create", {
@@ -118,18 +121,21 @@ const FormLoginRegister = () => {
             });
     };
 
+    // method to show if is logged
     const notifyLogged = () => {
         toast.success("Logged !", {
             position: toast.POSITION.TOP_CENTER,
         });
     };
 
+    // method to show if account created
     const notifyRegistered = () => {
         toast.success("Registered !", {
             position: toast.POSITION.TOP_CENTER,
         });
     };
 
+    // method to show if any error occured
     const notifyError = () => {
         toast.error("Oops, something went wrong. Try again", {
             position: toast.POSITION.TOP_CENTER,

@@ -9,12 +9,13 @@ import Img3 from "../../Assets/Images/HappyCouple.jpg";
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// Landing Page - First page the user sees
 const LandingPage = () => {
     const { pathname } = useLocation();
 
+    // Method to scrool to top on load
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);

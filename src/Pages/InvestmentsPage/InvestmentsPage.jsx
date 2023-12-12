@@ -8,49 +8,51 @@ import Img2 from "../../Assets/Images/HappyWomanInvest.jpg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+// Page to show info about investiments
 const InvestmentsPage = () => {
-   
-   const { pathname } = useLocation();
+  // variable to save the URL
+  const { pathname } = useLocation();
 
-   useEffect(() => {
-      window.scrollTo(0, 0);
-   }, [pathname]);
+  // Method to scrool to top on load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-   return (
-      <>
-         <Header />
+  return (
+    <>
+      <Header />
 
-         <Section
-            title={"Where Dreams Find Financial Wings"}
-            subTitle={``}
-            btnText={"Know More"}
-            img={Img1}
-            textOnRight={true}
-            haveButton={false}
-            btnHref={""}
-            tag={"bg-primary"}
-         />
+      <Section
+        title={"Where Dreams Find Financial Wings"}
+        subTitle={``}
+        btnText={"Know More"}
+        img={Img1}
+        textOnRight={true}
+        haveButton={false}
+        btnHref={""}
+        tag={"bg-primary"}
+      />
 
-         <Section
-            title={""}
-            subTitle={`Create a personalized investment portfolio that aligns with your unique financial objectives and preferences.
+      <Section
+        title={""}
+        subTitle={`Create a personalized investment portfolio that aligns with your unique financial objectives and preferences.
         
         Explore tax-efficient investment strategies to minimize your tax liabilities and maximize your after-tax returns."`}
-            btnText={"Know More"}
-            img={Img2}
-            textOnRight={false}
-            haveButton={false}
-            btnHref={""}
-            tag={"bg-secondary"}
-         />
+        btnText={"Know More"}
+        img={Img2}
+        textOnRight={false}
+        haveButton={false}
+        btnHref={""}
+        tag={"bg-secondary"}
+      />
 
-         <Footer
-            column1={""}
-            tag={"bg-primary-color color-text-2"}
-            type={"complete"}
-         />
-      </>
-   );
+      <Footer
+        column1={""}
+        tag={"bg-primary-color color-text-2"}
+        type={"complete"}
+      />
+    </>
+  );
 };
 
 export default InvestmentsPage;

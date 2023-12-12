@@ -1,5 +1,6 @@
 import './TitleSubStyle.css'
 
+// Sub Title component, styled in './Assets/Styles/index.css'
 const Title_Sub = (props) =>{
     const {text} = props
 
