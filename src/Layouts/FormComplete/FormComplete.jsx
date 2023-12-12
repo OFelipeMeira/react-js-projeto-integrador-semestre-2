@@ -84,7 +84,8 @@ const FormLoginRegister = () => {
     // method to log in
     const login = () => {
         axios
-            .post("http://127.0.0.1:8000/api/token/", {
+            // .post("http://127.0.0.1:8000/api/token/", {
+            .post("https://ofelipemeira.pythonanywhere.com/api/token/", {
                 email: email,
                 password: password,
             })
@@ -104,7 +105,7 @@ const FormLoginRegister = () => {
     // method to sing up
     const singup = () => {
         axios
-            .post("http://127.0.0.1:8000/api/v1/user/create", {
+            .post("https://ofelipemeira.pythonanywhere.com/api/v1/user/create", {
                 first_name: firstName,
                 last_name: lastName,
                 cpf: CPF,
