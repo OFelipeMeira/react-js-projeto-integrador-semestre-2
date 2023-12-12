@@ -7,8 +7,6 @@ import AboutPage from "./Pages/InvestmentsPage/InvestmentsPage";
 import LoginPage from "./Pages/LoginPage/LoginPage";
 import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 
-// import Testes from './Pages/Testes/Testes'
-
 //  Styles
 import './Assets/Styles/index.css'
 import './Assets/Styles/colors.css'

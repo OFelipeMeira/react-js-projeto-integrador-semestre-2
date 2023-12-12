@@ -1,6 +1,4 @@
 import SectionMain from "../../Layouts/SectionMain/Section";
-import SectionHowTo from "../../Layouts/SectionHowTo/SectionHowTo";
-// import SectionRotating from "../../Layouts/SectionRotating/SectionRotating";
 import Footer from "../../Layouts/Footer/Footer";
 
 import Header from "../../Layouts/Header/Header";
@@ -11,7 +9,7 @@ import Img3 from "../../Assets/Images/HappyCouple.jpg";
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const LandingPage = () => {
@@ -32,6 +30,7 @@ const LandingPage = () => {
                 }
                 img={Img1}
                 btnText={"Sign Up"}
+                btnHref={'/login?type=1'}
                 tag={"paddin-header bg-primary"}
             />
 

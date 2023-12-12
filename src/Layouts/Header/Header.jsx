@@ -13,7 +13,6 @@ import { GlobalContext } from "../../Util/Context";
 
 const Header = () => {
    const theContext = useContext(GlobalContext);
-   const { setState } = theContext;
    const { token } = theContext.contextState;
 
    const [hamburguer, setHamburger] = useState("menu-hide");
@@ -40,9 +39,6 @@ const Header = () => {
          </Link>
 
          <div className={`header-links ${hamburguer} `}>
-            {/* <Link className="header__a" to="/about-ezbank" target="">
-          About EzBank
-        </Link> */}
             <Link className="header__a" to="/card" target="">
                EzCard
             </Link>
